@@ -1,545 +1,304 @@
 @extends('layouts.main')
 
 @section('page-content')
-    <section class="page-title" style="background-image: url(assets/images/background/bg-9.jpg)">
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="content-wrapper">
-                    <div class="title">
-                        <h1>Tentang Kami.</h1>
-                    </div>
-                    <ul class="bread-crumb">
-                        <li><a href="./">Beranda</a></li>
-                        <li>Tentang Kami</li>
-                    </ul>
-                </div>
+    
+<!-- start page title section -->
+<section class="wow animate__fadeIn cover-background background-position-top top-space" style="background-image:url('https://via.placeholder.com/1920x450');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container position-relative">
+        <div class="row align-items-center">
+            <div class="col-12 d-flex flex-column text-center justify-content-center page-title-large padding-30px-tb">
+                <!-- start sub title -->
+                <span class="d-block text-white-2 opacity6 alt-font margin-5px-bottom">We are awesome designer</span>
+                <!-- end sub title -->
+                <!-- start page title -->
+                <h1 class="alt-font text-white-2 font-weight-600 mb-0">About simple</h1>
+                <!-- end page title -->
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- end page title section -->     
+<!-- start story section -->
+<section class="wow animate__fadeIn">
+    <div class="container"> 
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-5 col-md-6 text-center md-margin-30px-bottom wow animate__fadeInLeft">
+                <img src="https://via.placeholder.com/900x650" alt="" class="border-radius-6 w-100">
+            </div> 
+            <div class="col-12 col-lg-7 col-md-6 text-center text-md-start padding-eight-lr lg-padding-six-lr md-padding-15px-lr wow animate__fadeInRight" data-wow-delay="0.2s">
+                <span class="text-deep-pink alt-font margin-10px-bottom d-inline-block text-medium">Don’t worry, you’re in safe hands.</span>
+                <h6 class="alt-font text-extra-dark-gray">We are committed to our customers’ success from start to finish. Our input helps make their solutions.</h6>
+                <a href="services-simple.html" class="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top"><i class="fas fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i> Our Services</a>
+            </div>
+        </div>
+        <div class="divider-full bg-extra-light-gray margin-seven-bottom margin-eight-top"></div>
+        <!-- start feature box -->
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 justify-content-center">
+            <!-- start features box item -->
+            <div class="col md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp last-paragraph-no-margin">
+                <div class="feature-box-5 position-relative">
+                    <i class="icon-desktop text-medium-gray icon-medium"></i>
+                    <div class="feature-content">
+                        <div class="text-extra-dark-gray margin-10px-bottom alt-font font-weight-600">Digital Solutions</div>
+                        <p class="d-inline-block w-75 lg-w-100 xs-w-90">Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end features box item -->
+            <!-- start features box item -->
+            <div class="col md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
+                <div class="feature-box-5 position-relative">
+                    <i class="icon-book-open text-medium-gray icon-medium"></i>
+                    <div class="feature-content">
+                        <div class="text-extra-dark-gray margin-10px-bottom alt-font font-weight-600">SEO Marketing</div>
+                        <p class="d-inline-block w-75 lg-w-100 xs-w-90">Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end features box item -->
+            <!-- start features box item -->
+            <div class="col wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
+                <div class="feature-box-5 position-relative">
+                    <i class="icon-gift text-medium-gray icon-medium"></i>
+                    <div class="feature-content">
+                        <div class="text-extra-dark-gray margin-10px-bottom alt-font font-weight-600">Creative Strategy</div>
+                        <p class="d-inline-block w-75 lg-w-100 xs-w-90">Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end features box item -->
+        </div>
+        <!-- start feature box -->
+    </div>
+</section>
+<!-- end story section -->
+<!-- start feature box  -->
+<section class="bg-extra-dark-gray wow animate__fadeIn md-padding-one-half-lr sm-padding-two-lr">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- feature box item-->
+            <div class="col-12 col-lg-4 col-md-6 col-sm-8 feature-box-1 md-margin-60px-bottom sm-margin-40px-bottom wow animate__fadeInRight">
+                <div class="d-flex align-items-center margin-15px-bottom alt-font">
+                    <h3 class="char-value letter-spacing-minus-1 text-medium-gray font-weight-300 mb-0">01.</h3>
+                    <span class="text-large line-height-22 padding-20px-left sm-padding-15px w-100">Creativity.<br> Discover talent.</span>
+                </div>
+                <p class="w-90 lg-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry.</p>
+                <div class="separator-line-horrizontal-medium-light3 bg-deep-pink margin-5px-top float-start"></div>
+            </div>
+            <!-- end feature box item-->
+            <!-- start feature box item-->
+            <div class="col-12 col-lg-4 col-md-6 col-sm-8 feature-box-1 md-margin-60px-bottom sm-margin-40px-bottom wow animate__fadeInRight" data-wow-delay="0.2s">
+                <div class="d-flex align-items-center margin-15px-bottom alt-font">
+                    <h3 class="char-value letter-spacing-minus-1 text-medium-gray font-weight-300 mb-0">02.</h3>
+                    <span class="text-large line-height-22 padding-20px-left w-100">Technology.<br> Expert analysis.</span>
+                </div>
+                <p class="w-90 lg-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry.</p>
+                <div class="separator-line-horrizontal-medium-light3 bg-deep-pink margin-5px-top float-start"></div>
+            </div>
+            <!-- end feature box item-->
+            <!-- start feature box item-->
+            <div class="col-12 col-lg-4 col-md-6 col-sm-8 feature-box-1 wow animate__fadeInRight" data-wow-delay="0.4s">
+                <div class="d-flex align-items-center margin-15px-bottom alt-font">
+                    <h3 class="char-value letter-spacing-minus-1 text-medium-gray font-weight-300 mb-0">03.</h3>
+                    <span class="text-large line-height-22 padding-20px-left w-100">Discover.<br> Explore work.</span>
+                </div>
+                <p class="w-90 lg-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry.</p>
+                <div class="separator-line-horrizontal-medium-light3 bg-deep-pink margin-5px-top float-start"></div>
+            </div>
+            <!-- end feature box item-->
+        </div>
+    </div>
+</section>
+<!-- end feature box -->
+<!-- start section -->
+<section class="wow animate__fadeIn last-paragraph-no-margin">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 col-md-8 col-sm-9 text-center margin-70px-bottom md-margin-40px-bottom sm-margin-30px-bottom">
+                <span class="alt-font text-deep-pink text-medium margin-5px-bottom d-block">We are delivering beautiful digital products</span>
+                <h6 class="font-weight-400 text-extra-dark-gray alt-font mb-0">Wide range of web and software development services across the world</h6>
+            </div>
+        </div>
+        <div class="row margin-eight-bottom md-margin-30px-bottom">              
+            <div class="col-12 col-md-8 sm-margin-15px-bottom wow animate__fadeInLeft" data-wow-delay="0.2s">
+                <img src="https://via.placeholder.com/1000x700" alt="" class="border-radius-6">
+            </div>
+            <div class="col-12 col-md-4 wow animate__fadeInRight" data-wow-delay="0.4s">
+                <img src="https://via.placeholder.com/500x730" alt="" class="border-radius-6 sm-w-100">
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 align-items-center">
+            <div class="col sm-margin-15px-bottom">
+                <span class="text-extra-large text-extra-dark-gray alt-font w-90 lg-w-95 md-w-100 d-block">We're fortunate to work with fantastic clients from across the globe in over 11 countries on design and branding.</span>
+            </div>
+            <div class="col sm-margin-15px-bottom">
+                <strong class="font-weight-600 text-extra-dark-gray margin-5px-bottom d-block alt-font">Our approach</strong>
+            </div>
+            <div class="col">
+                <strong class="font-weight-600 text-extra-dark-gray margin-5px-bottom d-block alt-font">Our Mission</strong>
+            </div>                    
+        </div>
+    </div>
+</section>
+<!-- end section -->
+<!-- start slider section  -->
+<section id="clients" class="parallax wow animate__fadeIn" data-parallax-background-ratio="0.4" style="background-image:url('https://via.placeholder.com/1920x1200');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container">
+        <div class="row">    
+            <div class="swiper-container white-move" data-slider-options='{ "slidesPerView": "1", "allowTouchMove":true,"paginationClickable": true, "autoplay": { "delay": 3000, "disableOnInteraction": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "pagination": { "el": ".swiper-pagination", "clickable": true }, "breakpoints": { "1200": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "pagination": { "el": ".swiper-pagination" } }'>
+                <div class="swiper-wrapper">
+                    <!-- start slide item--><div class="swiper-slide text-center"><a href="http://envato.com"><img src="images/clients-logo1.png" alt=""></a></div><!-- end slide item -->
+                    <!-- start slide item--><div class="swiper-slide text-center"><a href="http://woocommerce.com"><img src="images/clients-logo2.png" alt=""></a></div><!-- end slide item -->
+                    <!-- start slide item--><div class="swiper-slide text-center"><a href="http://wordpress.com"><img src="images/clients-logo3.png" alt=""></a></div><!-- end slide item -->
+                    <!-- start slide item--><div class="swiper-slide text-center"><a href="http://magento.com"><img src="images/clients-logo4.png" alt=""></a></div><!-- end slide item -->
+                    <!-- start slide item--><div class="swiper-slide text-center"><a href="http://envato.com"><img src="images/clients-logo1.png" alt=""></a></div><!-- end slide item -->
+                    <!-- start slide item--><div class="swiper-slide text-center"><a href="http://woocommerce.com"><img src="images/clients-logo2.png" alt=""></a></div><!-- end slide item -->
+                    <!-- start slide item--><div class="swiper-slide text-center"><a href="http://wordpress.com"><img src="images/clients-logo3.png" alt=""></a></div><!-- end slide item -->
+                    <!-- start slide item--><div class="swiper-slide text-center"><a href="http://magento.com"><img src="images/clients-logo4.png" alt=""></a></div><!-- end slide item -->
+                </div>
+                <!-- start swiper pagination -->
+                <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+                <!-- end swiper pagination -->
+            </div>
+        </div>    
+    </div>
+</section>
+<!-- end slider section -->
+<!-- start testimonial section -->
+<section class="wow animate__fadeIn bg-light-gray testimonial-style3">
+    <div class="container">                
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 md-margin-two-bottom wow animate__fadeIn last-paragraph-no-margin testimonial-style3">
+                        <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom lg-padding-nine-all md-padding-eight-all">
+                            I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.
+                        </div>
+                        <!-- start testimonials item -->
+                        <div class="testimonial-box padding-25px-all sm-padding-20px-all">
+                            <div class="image-box w-20"><img src="https://via.placeholder.com/149x149" class="rounded-circle" alt=""></div>
+                            <div class="name-box padding-20px-left">
+                                <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
+                                <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end testimonials item -->
+                    <!-- start testimonials item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 md-margin-two-bottom wow animate__fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.2s">
+                        <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom lg-padding-nine-all md-padding-eight-all">
+                            This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website.
+                        </div>
+                        <div class="testimonial-box padding-25px-all sm-padding-20px-all">
+                            <div class="image-box w-20"><img src="https://via.placeholder.com/149x149" class="rounded-circle" alt=""></div>
+                            <div class="name-box padding-20px-left">
+                                <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
+                                <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end testimonials item -->
+                    <!-- start testimonials item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 wow animate__fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.4s">
+                        <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom lg-padding-nine-all md-padding-eight-all">
+                            Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks again guys for all your hard work.
+                        </div>
+                        <div class="testimonial-box padding-25px-all sm-padding-20px-all">
+                            <div class="image-box w-20"><img src="https://via.placeholder.com/149x149" class="rounded-circle" alt=""></div>
+                            <div class="name-box padding-20px-left">
+                                <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
+                                <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end testimonials item -->
+                </div>
+            </div>
+        </div> 
+    </div> 
+</section>
+<!-- end testimonial section -->     
+<!-- start information section -->     
+<section class="bg-extra-dark-gray wow animate__fadeIn">
+    <div class="container">
+        <div class="row align-items-center justify-content-center"> 
+            <div class="col-12 col-lg-5 lg-margin-50px-bottom wow animate__fadeInLeft">
+                <h5 class="alt-font text-light-gray margin-30px-bottom">Beautifully handcrafted templates for your website</h5>
+                <ul class="p-0 list-style-4 list-style-color">
+                    <li>Beautiful and easy to understand UI, professional animations</li>
+                    <li>Theme advantages are pixel perfect design & clear code delivered</li>
+                    <li>Present your services with flexible, convenient and multipurpose</li>
+                    <li>Find more creative ideas for your projects </li>
+                    <li>Unlimited power and customization possibilities</li> 
+                </ul>
+                <a href="services-modern.html" class="btn btn-white btn-small text-extra-small btn-rounded margin-20px-top"><i class="fas fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i> ALL advantages</a>
+            </div>
+            <div class="col-12 col-lg-7 wow animate__fadeInRight">
+                <img src="https://via.placeholder.com/850x550" alt="" class="w-100">
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- end information section -->     
+<!-- start post content section --> 
+<section class="wow animate__fadeIn">
+    <div class="container"> 
+        <div class="row justify-content-center">
+            <div class="col-12 blog-content">
+                <ul class="blog-grid blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-1col xs-grid-1col hover-option4 blog-post-style3 gutter-extra-large">
+                    <li class="grid-sizer"></li>
+                    <!-- start event image item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start wow animate__fadeInUp">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-01.html">
+                                    <img src="https://via.placeholder.com/900x650" alt="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-01.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">I find modernist design boring, but it so much faster!</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end event emage item -->
+                    <!-- start event image item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start wow animate__fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-03.html">
+                                    <img src="https://via.placeholder.com/900x650" alt="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-03.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Designers are meant to be loved, not to be understood.</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end event emage item -->
+                    <!-- start event image item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start wow animate__fadeInUp">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-04.html">
+                                    <img src="https://via.placeholder.com/900x650" alt="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-04.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Design is the conscious effort to impose a meaningful order.</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end event emage item -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end event image section -->  
 
-    <!-- About section -->
-    <section class="about-section style-two">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="sec-title mb-30">
-                        <h2>
-                            Clean Infrastructures <br />
-                            & Flawless Attractions
-                        </h2>
-                    </div>
-                    <div class="content-block">
-                        <h3>Voice Of The People: <strong> Governlia</strong></h3>
-                        <div class="text">
-                            Veniam quis nostrud exercitation llamco laboris nis aliquip conseqa rure dolorn repreh derit luptate velit excepteur ocaecats aliquip ex duis aute irure dolor in reprehenderit voluptate velitey cillum
-                            dolore ipsum dolor consectetur.
-                        </div>
-                        <ul class="list">
-                            <li>Improving all types of opportunities</li>
-                            <li>Quick solutions for daily problems</li>
-                            <li>Best time and place to start business</li>
-                            <li>Community that grows larger</li>
-                        </ul>
-                        <div class="bottom-content">
-                            <div class="text">
-                                For Any Help, Questions <br />
-                                or Suggestions, Contact Us
-                            </div>
-                            <ul class="contact-link">
-                                <li>
-                                    <a href="tel:+1(345)20678"><i class="icon-phone"></i></a>
-                                </li>
-                                <li>
-                                    <a href="mailto:munciple@example.net"><i class="icon-envelope"></i></a>
-                                </li>
-                                <li>
-                                    <a href="contact.php"><i class="icon-placeholder"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="image-block">
-                        <div class="row">
-                            <div class="col-lg-6 column">
-                                <div class="image"><img src="assets/images/resource/image-28.jpg" alt="" /></div>
-                                <div class="image"><img src="assets/images/resource/image-29.jpg" alt="" /></div>
-                            </div>
-                            <div class="col-lg-6 column">
-                                <div class="image"><img src="assets/images/resource/image-30.jpg" alt="" /></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Funfacts Section -->
-    <section class="funfacts-section mb-0" style="background-image: url(assets/images/background/bg-1.jpg)">
-        <div class="auto-container">
-            <div class="row">
-                <!--Column-->
-                <div class="column counter-column col-lg-4 col-md-6">
-                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-outer">
-                            <div class="icon"><span class="icon-area"></span></div>
-                        </div>
-                        <div class="content">
-                            <div class="text">Area Covered</div>
-                            <div class="count-outer count-box"><span class="count-text" data-speed="3000" data-stop="790.3">0</span><span>km²</span></div>
-                        </div>
-                    </div>
-                </div>
-                <!--Column-->
-                <div class="column counter-column col-lg-4 col-md-6">
-                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-outer">
-                            <div class="icon"><span class="icon-people"></span></div>
-                        </div>
-                        <div class="content">
-                            <div class="text">Peoples Lived</div>
-                            <div class="count-outer count-box"><span class="count-text" data-speed="3000" data-stop="5.39">0</span><span>million</span></div>
-                        </div>
-                    </div>
-                </div>
-                <!--Column-->
-                <div class="column counter-column col-lg-4 col-md-6">
-                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-outer">
-                            <div class="icon"><span class="icon-language"></span></div>
-                        </div>
-                        <div class="content">
-                            <div class="text">Languages Spoken</div>
-                            <div class="count-outer count-box"><span>Over</span><span class="count-text" data-speed="3000" data-stop="460">0</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section mb-30">
-        <div class="auto-container">
-            <div class="row no-gutters">
-                <div class="col-xl-3 col-lg-6 feature-block">
-                    <div class="inner-box">
-                        <div class="icon"><span class="icon-train"></span></div>
-                        <div class="content">
-                            <div class="category"><span>Transportation</span></div>
-                            <h3>
-                                Find a Public Transport <br />
-                                or Locate Parking
-                            </h3>
-                        </div>
-                        <div class="overlay" style="background-image: url(assets/images/resource/image-16.jpg)">
-                            <div class="category"><span>Transportation</span></div>
-                            <h3>
-                                Find a Public Transport <br />
-                                or Locate Parking
-                            </h3>
-                            <div class="text">
-                                Dolore magna aliquat minim veniay quis <br />
-                                exercit ullamco laboris aliquip...
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 feature-block">
-                    <div class="inner-box">
-                        <div class="icon"><span class="icon-pets-2"></span></div>
-                        <div class="content">
-                            <div class="category"><span>Wildlife Animals</span></div>
-                            <h3>
-                                Search for an Animal or <br />
-                                Pet for Adoption
-                            </h3>
-                        </div>
-                        <div class="overlay" style="background-image: url(assets/images/resource/image-16.jpg)">
-                            <div class="category"><span>Wildlife Animals</span></div>
-                            <h3>
-                                Search for an Animal or <br />
-                                Pet for Adoption
-                            </h3>
-                            <div class="text">
-                                Dolore magna aliquat minim veniay quis <br />
-                                exercit ullamco laboris aliquip...
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 feature-block">
-                    <div class="inner-box">
-                        <div class="icon"><span class="icon-laptop"></span></div>
-                        <div class="content">
-                            <div class="category"><span>Utility Services</span></div>
-                            <h3>
-                                Pay any Utility Bill Easily <br />
-                                by Access Account
-                            </h3>
-                        </div>
-                        <div class="overlay" style="background-image: url(assets/images/resource/image-16.jpg)">
-                            <div class="category"><span>Utility Services</span></div>
-                            <h3>
-                                Pay any Utility Bill Easily <br />
-                                by Access Account
-                            </h3>
-                            <div class="text">
-                                Dolore magna aliquat minim veniay quis <br />
-                                exercit ullamco laboris aliquip...
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 feature-block">
-                    <div class="inner-box">
-                        <div class="icon"><span class="icon-report"></span></div>
-                        <div class="content">
-                            <div class="category"><span>Municipal Court</span></div>
-                            <h3>
-                                Did any Violation? Submit <br />
-                                Ticket(s) or Pay Tax
-                            </h3>
-                        </div>
-                        <div class="overlay" style="background-image: url(assets/images/resource/image-16.jpg)">
-                            <div class="category"><span>Transportation</span></div>
-                            <h3>
-                                Find a Public Transport <br />
-                                or Locate Parking
-                            </h3>
-                            <div class="text">
-                                Dolore magna aliquat minim veniay quis <br />
-                                exercit ullamco laboris aliquip...
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mayor Message section -->
-    <section class="mayor-message-section">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="image"><img src="assets/images/resource/image-4.jpg" alt="" /></div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="content-block pl-lg-5">
-                        <div class="sec-title">
-                            <div class="sub-title">City With Equity - Efficiency - Opportunity</div>
-                            <h2>Message From City Mayor</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <h3><span>Meet</span> Tim Brexton</h3>
-                                <h4>Elected since August 25, 2017</h4>
-                                <div class="text">
-                                    <p>
-                                        Hiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur.
-                                    </p>
-                                    <p>Excepteur sint occaecat cupidatat non proident suntin culpa qui officia deserunt mollit anim idm est laborum. Sed perspiciatis und omnis iste natus error sit voluptatem accusantium.</p>
-                                </div>
-                                <div class="sign"><img src="assets/images/resource/sign.png" alt="" /></div>
-                                <div class="designation">The City Mayor</div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="funfacts">
-                                    <div class="column counter-column">
-                                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                            <div class="content">
-                                                <div class="text">Years Of <br />Experience</div>
-                                                <div class="count-outer count-box">
-                                                    <span class="count-text" data-speed="3000" data-stop="25">0</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column counter-column">
-                                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                            <div class="content">
-                                                <div class="text">
-                                                    programs <br />
-                                                    for the city
-                                                </div>
-                                                <div class="count-outer count-box">
-                                                    <span class="count-text" data-speed="3000" data-stop="80">0</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column counter-column">
-                                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                            <div class="content">
-                                                <div class="text">
-                                                    Approved <br />
-                                                    covid-19 centers
-                                                </div>
-                                                <div class="count-outer count-box">
-                                                    <span class="count-text" data-speed="3000" data-stop="63">0</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video section -->
-    <section class="video-section" style="background-image: url(assets/images/background/bg-3.jpg)">
-        <div class="auto-container">
-            <h2>
-                <strong>Experience The Great</strong> <br />
-                Countryside And Enjoy Hiking
-            </h2>
-            <div class="text">Eabore ipsum dolor sit amet consectetur adipisicing tempor</div>
-            <div class="video-btn">
-                <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="overlay-link play-now ripple" data-fancybox="gallery" data-caption=""><span class="fas fa-play"></span> </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team section -->
-    <section class="team-section">
-        <div class="auto-container">
-            <div class="sec-title style-two text-center">
-                <div class="big-title">Governlia</div>
-                <div class="sub-title">City With Equity - Efficiency - Opportunity</div>
-                <h2>Upcoming City Events</h2>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-6 team-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="assets/images/resource/team-1.jpg" alt="" /></div>
-                        <div class="content">
-                            <h4>Paul Wilson</h4>
-                            <div class="designation">mayor / Chairman</div>
-                        </div>
-                        <div class="overlay">
-                            <div class="content-two">
-                                <h4>Paul Wilson</h4>
-                                <div class="designation">mayor / Chairman</div>
-                                <ul class="contact-info">
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-phone"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-envelope-open"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                </ul>
-                                <ul class="social-links">
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linked-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 team-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="assets/images/resource/team-2.jpg" alt="" /></div>
-                        <div class="content">
-                            <h4>Robert Gates</h4>
-                            <div class="designation">Ambassador</div>
-                        </div>
-                        <div class="overlay">
-                            <div class="content-two">
-                                <h4>Robert Gates</h4>
-                                <div class="designation">Ambassador</div>
-                                <ul class="contact-info">
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-phone"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-envelope-open"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                </ul>
-                                <ul class="social-links">
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linked-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 team-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="assets/images/resource/team-3.jpg" alt="" /></div>
-                        <div class="content">
-                            <h4>Amanda Tim</h4>
-                            <div class="designation">Mayor Assistant</div>
-                        </div>
-                        <div class="overlay">
-                            <div class="content-two">
-                                <h4>Amanda Tim</h4>
-                                <div class="designation">Mayor Assistant</div>
-                                <ul class="contact-info">
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-phone"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-envelope-open"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                </ul>
-                                <ul class="social-links">
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linked-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 team-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="assets/images/resource/team-4.jpg" alt="" /></div>
-                        <div class="content">
-                            <h4>Richard Auston</h4>
-                            <div class="designation">Council Member</div>
-                        </div>
-                        <div class="overlay">
-                            <div class="content-two">
-                                <h4>Paul Wilson</h4>
-                                <div class="designation">Council Member</div>
-                                <ul class="contact-info">
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-phone"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-envelope-open"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                </ul>
-                                <ul class="social-links">
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linked-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 team-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="assets/images/resource/team-5.jpg" alt="" /></div>
-                        <div class="content">
-                            <h4>Harry Arther</h4>
-                            <div class="designation">Council Member</div>
-                        </div>
-                        <div class="overlay">
-                            <div class="content-two">
-                                <h4>Harry Arther</h4>
-                                <div class="designation">Council Member</div>
-                                <ul class="contact-info">
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-phone"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-envelope-open"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                </ul>
-                                <ul class="social-links">
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linked-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 team-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="assets/images/resource/team-1.jpg" alt="" /></div>
-                        <div class="content">
-                            <h4>Jack W. Oliver</h4>
-                            <div class="designation">Council Member</div>
-                        </div>
-                        <div class="overlay">
-                            <div class="content-two">
-                                <h4>Jack W. Oliver</h4>
-                                <div class="designation">Council Member</div>
-                                <ul class="contact-info">
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-phone"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+1(852)6105599"><i class="fas fa-envelope-open"></i>+ 1 (852) 610 5599</a>
-                                    </li>
-                                </ul>
-                                <ul class="social-links">
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linked-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 @endsection

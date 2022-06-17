@@ -1,261 +1,207 @@
 @extends('layouts.main')
 
 @section('page-content')
-    <section class="page-title" style="background-image: url(assets/images/background/bg-9.jpg)">
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="content-wrapper">
-                    <div class="title">
-                        <h1>Blog.</h1>
-                    </div>
-                    <ul class="bread-crumb">
-                        <li><a href="./">Beranda</a></li>
-                        <li>Postingan</li>
-                    </ul>
-                </div>
+<!-- Start end page title -->
+<section class="wow animate__fadeIn parallax" data-parallax-background-ratio="0.5" style="background-image: url(&quot;https://via.placeholder.com/1920x1100&quot;); visibility: visible; animation-name: fadeIn;">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container position-relative">
+        <div class="row align-items-center">
+            <div class="col-12 d-flex flex-column justify-content-center text-center extra-small-screen page-title-large">
+                <!-- start page title -->
+                <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom">Blog grid full width</h1>
+                <span class="text-white-2 opacity6 alt-font">Lorem Ipsum is simply dummy text printing</span>
+                <!-- end page title --> 
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- end page title -->
 
-    <!-- Sidebar Page Container -->
-    <section class="sidebar-page-container">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="news-block-two">
-                        <div class="inner-box">
-                            <div class="image">
-                                <img src="assets/images/resource/news-15.jpg" alt="" />
-                                <div class="overlay">
-                                    <div class="link-btn">
-                                        <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                    </div>
-                                </div>
+<!-- Start page section -->
+<section class="wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-12 blog-content">
+                <ul class="blog-grid blog-wrapper grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-1col hover-option4 blog-post-style3 gutter-extra-large" style="position: relative; height: 1654.44px;">
+                    <li class="grid-sizer"></li>
+                    <!-- start post item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; visibility: visible; animation-name: fadeInUp;">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="/blog/slug">
+                                    <img src="https://via.placeholder.com/1200x752" alt="" data-no-retina="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
                             </div>
-                            <div class="lower-content">
-                                <h4><a href="blog-details.php">Assistance For Homes & Real Estate</a></h4>
-                                <div class="text">
-                                    Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore magna aliqua. Ut enim
-                                    quis nostrud exercitation ullamco laboris aliquip.
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="/blog/slug" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">I like the body. I like to design everything to do with the body.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="" class="text-medium-gray">Jay Benjamin</a>&nbsp;&nbsp;|&nbsp;&nbsp;13 May 2017</span>
                                 </div>
-                                <ul class="post-meta">
-                                    <li><i class="far fa-user"></i>City Admin</li>
-                                    <li><i class="far fa-calendar"></i>Sep 3, 2020</li>
-                                    <li class="read-more">
-                                        <a href="blog-details.php"><i class="icon-arrow"></i>Read More</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="news-block-two">
-                        <div class="inner-box">
-                            <div class="image">
-                                <img src="assets/images/resource/news-16.jpg" alt="" />
-                                <div class="overlay">
-                                    <div class="link-btn">
-                                        <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                    </div>
-                                </div>
+                    </li>
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start animate__fadeInUp" data-wow-delay="0.2s" style="position: absolute; left: 33.3297%; top: 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-02.html">
+                                    <img src="https://via.placeholder.com/1200x752" alt="" data-no-retina="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
                             </div>
-                            <div class="lower-content">
-                                <h4><a href="blog-details.php">Highest Attraction Is Most Visited Market</a></h4>
-                                <div class="text">
-                                    Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore magna aliqua. Ut enim
-                                    quis nostrud exercitation ullamco laboris aliquip.
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-02.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Graphic design will save the world right after rock and roll does.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="" class="text-medium-gray">Herman Miller</a>&nbsp;&nbsp;|&nbsp;&nbsp;29 April 2017</span>
                                 </div>
-                                <ul class="post-meta">
-                                    <li><i class="far fa-user"></i>City Admin</li>
-                                    <li><i class="far fa-calendar"></i>Sep 3, 2020</li>
-                                    <li class="read-more">
-                                        <a href="blog-details.php"><i class="icon-arrow"></i>Read More</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="news-block-two">
-                        <div class="inner-box">
-                            <div class="image">
-                                <img src="assets/images/resource/news-17.jpg" alt="" />
-                                <div class="overlay">
-                                    <div class="link-btn">
-                                        <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                    </div>
-                                </div>
+                    </li>
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start animate__fadeInUp" data-wow-delay="0.4s" style="position: absolute; left: 66.6594%; top: 0px; visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-03.html">
+                                    <img src="https://via.placeholder.com/1200x752" alt="" data-no-retina="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
                             </div>
-                            <div class="lower-content">
-                                <h4><a href="blog-details.php">Long Term Vision For Health Facilities</a></h4>
-                                <div class="text">
-                                    Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore magna aliqua. Ut enim
-                                    quis nostrud exercitation ullamco laboris aliquip.
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-03.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Recognizing the need is the primary condition for design.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy....</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="" class="text-medium-gray">Hugh Macleod</a>&nbsp;&nbsp;|&nbsp;&nbsp;18 April 2017</span>
                                 </div>
-                                <ul class="post-meta">
-                                    <li><i class="far fa-user"></i>City Admin</li>
-                                    <li><i class="far fa-calendar"></i>Sep 3, 2020</li>
-                                    <li class="read-more">
-                                        <a href="blog-details.php"><i class="icon-arrow"></i>Read More</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="news-block-two">
-                        <div class="inner-box">
-                            <div class="image">
-                                <img src="assets/images/resource/news-18.jpg" alt="" />
-                                <div class="overlay">
-                                    <div class="link-btn">
-                                        <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                    </div>
-                                </div>
+                    </li>
+                    <!-- end post item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start animate__fadeInUp" data-wow-delay="0.6s" style="position: absolute; left: 0%; top: 543.812px; visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-04.html">
+                                    <img src="https://via.placeholder.com/1200x752" alt="" data-no-retina="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
                             </div>
-                            <div class="lower-content">
-                                <h4><a href="blog-details.php">Self-Guided Driving & Tours Of City</a></h4>
-                                <div class="text">
-                                    Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore magna aliqua. Ut enim
-                                    quis nostrud exercitation ullamco laboris aliquip.
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-04.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">At a meta level, design connects the dots between mere survival and humanism.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="" class="text-medium-gray">Willie Clark</a>&nbsp;&nbsp;|&nbsp;&nbsp;31 March 2017</span>
                                 </div>
-                                <ul class="post-meta">
-                                    <li><i class="far fa-user"></i>City Admin</li>
-                                    <li><i class="far fa-calendar"></i>Sep 3, 2020</li>
-                                    <li class="read-more">
-                                        <a href="blog-details.php"><i class="icon-arrow"></i>Read More</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <!-- Post Pagination -->
-                    <ul class="post-pagination mt-5 mb-30">
-                        <li class="prev-page">
-                            <a href="#"><i class="icon-arrow"></i></a>
-                        </li>
-                        <li class="current"><span> 1</span></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li class="next-page">
-                            <a href="#"><i class="icon-arrow"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <aside class="sidebar blog-sidebar sidebar-style-two">
-                        <div class="widget widget_search">
-                            <h3 class="widget-title">Cari</h3>
-                            <form action="#" method="post" class="search-form">
-                                <div class="form-group">
-                                    <input type="search" name="search-field" placeholder="Cari Postingan ..." required="" />
-                                    <button type="search"><i class="fas fa-search"></i></button>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- <div class="widget widget_categories style-two">
-                            <h3 class="widget-title">Blog Categories</h3>
-                            <div class="widget-content">
-                                <ul class="categories-list">
-                                    <li><a href="blog-details.php">Business & Taxation</a></li>
-                                    <li><a href="blog-details.php">Law, Justice & Police</a></li>
-                                    <li class="current"><a href="blog-details.php"> Government & Elections</a></li>
-                                    <li><a href="blog-details.php">Pets & Wildlife Area</a></li>
-                                    <li><a href="blog-details.php">Employment & Jobs</a></li>
-                                </ul>
+                    </li>
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start animate__fadeInUp" style="position: absolute; left: 33.3297%; top: 543.812px; visibility: visible; animation-name: fadeInUp;">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-05.html">
+                                    <img src="https://via.placeholder.com/1200x752" alt="" data-no-retina="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
                             </div>
-                        </div> -->
-                        <div class="widget widget_popular_post">
-                            <h3 class="widget-title">Postingan Terbaru</h3>
-
-                            <article class="post">
-                                <figure class="post-thumb">
-                                    <a href="blog-details.php"><img src="assets/images/resource/news-19.jpg" alt="" /></a>
-                                </figure>
-                                <div class="content">
-                                    <h5>
-                                        <a href="blog-details.php"
-                                            >Recreation Programs <br />
-                                            From Landscapes</a
-                                        >
-                                    </h5>
-                                    <div class="post-info"><i class="far fa-calendar-alt"></i> Sep 3, 2020</div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-05.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">The only important thing about design is how it relates to people.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="" class="text-medium-gray">John Doe</a>&nbsp;&nbsp;|&nbsp;&nbsp;09 March 2017</span>
                                 </div>
-                            </article>
-                            <article class="post">
-                                <figure class="post-thumb">
-                                    <a href="blog-details.php"><img src="assets/images/resource/news-20.jpg" alt="" /></a>
-                                </figure>
-                                <div class="content">
-                                    <h5>
-                                        <a href="blog-details.php"
-                                            >Start An Evening With <br />
-                                            Drinks At Rooftop</a
-                                        >
-                                    </h5>
-                                    <div class="post-info"><i class="far fa-calendar-alt"></i> Sep 3, 2020</div>
-                                </div>
-                            </article>
-                            <article class="post">
-                                <figure class="post-thumb">
-                                    <a href="blog-details.php"><img src="assets/images/resource/news-21.jpg" alt="" /></a>
-                                </figure>
-                                <div class="content">
-                                    <h5>
-                                        <a href="blog-details.php"
-                                            >Self-Guided Driving & <br />
-                                            Tours Walk Of City</a
-                                        >
-                                    </h5>
-                                    <div class="post-info"><i class="far fa-calendar-alt"></i> Sep 3, 2020</div>
-                                </div>
-                            </article>
-                            <article class="post">
-                                <figure class="post-thumb">
-                                    <a href="blog-details.php"><img src="assets/images/resource/news-22.jpg" alt="" /></a>
-                                </figure>
-                                <div class="content">
-                                    <h5>
-                                        <a href="blog-details.php"
-                                            >Recreation Programs <br />
-                                            From Landscapes</a
-                                        >
-                                    </h5>
-                                    <div class="post-info"><i class="far fa-calendar-alt"></i> Sep 3, 2020</div>
-                                </div>
-                            </article>
-                        </div>
-                        <!-- Tag-cloud Widget -->
-                        <!-- <div class="widget widget_tag_cloud">
-                            <h3 class="widget-title">Tags Cloud</h3>
-                            <ul class="clearfix">
-                                <li><a href="#">recreation</a></li>
-                                <li><a href="#">activities</a></li>
-                                <li><a href="#">administration</a></li>
-                                <li><a href="#">city</a></li>
-                                <li><a href="#">Business</a></li>
-                                <li><a href="#">municipal</a></li>
-                                <li><a href="#">tourists</a></li>
-                                <li><a href="#">food & Drink</a></li>
-                            </ul>
-                        </div> -->
-                        <!-- Contact Widget two -->
-                        <!-- <div class="widget contact-widget-two" style="background-image: url(assets/images/resource/image-51.jpg)">
-                            <h3 class="widget-title">Municipal Complaints</h3>
-                            <div class="widget-content">
-                                <ul class="contact-info">
-                                    <li>
-                                        <a href="#"><i class="pe-7s-headphones"></i> Emergency 9922</a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:mail@governlia.net"><i class="pe-7s-mail-open"></i> mail@governlia.net</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:8526105599"><i class="pe-7s-call"></i> Call us 852-610-5599</a>
-                                    </li>
-                                </ul>
                             </div>
-                        </div> -->
-                    </aside>
-                </div>
+                        </div>
+                    </li>
+                    <!-- end post item -->
+                    <!-- start post item --> 
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start animate__fadeInUp" data-wow-delay="0.2s" style="position: absolute; left: 66.6594%; top: 543.812px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-standard-post.html">
+                                    <img src="https://via.placeholder.com/1200x752" alt="" data-no-retina="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-standard-post.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Design is the conscious effort to impose a meaningful order.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy....</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="" class="text-medium-gray">Isaac Tobin</a>&nbsp;&nbsp;|&nbsp;&nbsp;20 February 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start animate__fadeInUp" data-wow-delay="0.4s" style="position: absolute; left: 33.3297%; top: 1087.62px; visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-gallery-post.html">
+                                    <img src="https://via.placeholder.com/1200x752" alt="" data-no-retina="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-gallery-post.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Design creates culture. Culture shapes values. Values determine the future.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="" class="text-medium-gray">Jason Bourne</a>&nbsp;&nbsp;|&nbsp;&nbsp;14 January 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <li class="grid-item last-paragraph-no-margin text-center text-sm-start animate__fadeInUp" data-wow-delay="0.6s" style="position: absolute; left: 66.6594%; top: 1087.62px; visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                        <div class="blog-post bg-light-gray">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-html5-video-post.html">
+                                    <img src="https://via.placeholder.com/1200x752" alt="" data-no-retina="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-html5-video-post.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Design is the conscious effort to impose a meaningful order.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy....</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="" class="text-medium-gray">Amanda Holmes</a>&nbsp;&nbsp;|&nbsp;&nbsp;01 January 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end post item -->
+                </ul>
             </div>
         </div>
-    </section>
+        <!-- start pagination -->
+        <div class="text-center margin-100px-top md-margin-50px-top wow animate__fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="pagination text-small text-uppercase text-extra-dark-gray">
+                <ul class="mx-auto">
+                    <li><a href="#"><i class="fas fa-long-arrow-alt-left margin-5px-right d-none d-md-inline-block"></i> Prev</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">Next <i class="fas fa-long-arrow-alt-right margin-5px-left d-none d-md-inline-block"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end pagination -->
+    </div>
+</section>
+<!-- end page section -->
+
+
 @endsection
