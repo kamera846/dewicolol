@@ -9,8 +9,7 @@
         <div class="row align-items-center">
             <div class="col-12 d-flex flex-column justify-content-center text-center extra-small-screen page-title-large">
                 <!-- start page title -->
-                <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom">Galeri</h1>
-                <span class="text-white-2 opacity6 alt-font">Lorem Ipsum is simply dummy text printing</span>
+                <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom">Galeri Kami</h1>
                 <!-- end page title --> 
             </div>
         </div>
@@ -21,195 +20,104 @@
 <!-- start gallry content section -->
 <section class="wow animate__fadeIn">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-xl-7 col-lg-8 col-md-10 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
-                <div class="alt-font text-medium-gray margin-5px-bottom text-uppercase text-small">we believe in business growth</div>
-                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">Talent wins games, but teamwork and intelligence wins championships</h5>
+        <div class="row justify-content-center wow animate__fadeInUp">
+            <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
+                <div class="position-relative overflow-hidden w-100">
+                    <span class="text-small text-outside-line-full alt-font font-weight-600 text-uppercase">Momen yang berhasil kami abadikan</span>
+                </div>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 justify-content-center">
-            <!-- start gallery item -->
-            <div class="col team-block text-start team-style-1 xl-margin-four-bottom md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInUp">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/900x650" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray">Herman Mil Lorem Ipsum Dolorler</div>
-                        </div>   
-                    </figcaption>
-                </figure>
+        <div class="row wow animate__fadeInUp">
+            <div class="col-12 filter-content overflow-hidden">
+                <ul class="hover-option2 portfolio-gallery portfolio-wrapper grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-medium" style="position: relative; height: 227.75px;">
+                    <li class="grid-sizer"></li>
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
+                                </div>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end image gallery item -->
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
+                                </div>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end image gallery item -->
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
+                                </div>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end image gallery item -->
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
+                                </div>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end image gallery item -->
+                </ul>
             </div>
-            <!-- end gallery item -->
-            <!-- start gallery item -->
-            <div class="col team-block text-start team-style-1 xl-margin-four-bottom md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInUp" data-wow-delay="0.2s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/900x650" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray">Bill Gardn Lorem Ipsum Dolorer</div>
-                        </div>   
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end gallery item -->
-            <!-- start gallery item -->
-            <div class="col team-block text-start team-style-1 xl-margin-four-bottom md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInUp" data-wow-delay="0.4s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/900x650" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray">Jeremy Dup Lorem Ipsum Doloront</div>
-                        </div>   
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end gallery item -->
-            <!-- start gallery item -->
-            <div class="col team-block text-start team-style-1 xl-margin-four-bottom md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInUp">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/900x650" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray">Herman Mil Lorem Ipsum Dolorler</div>
-                        </div>   
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end gallery item -->
-            <!-- start gallery item -->
-            <div class="col team-block text-start team-style-1 xl-margin-four-bottom md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInUp" data-wow-delay="0.2s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/900x650" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray">Bill Gardn Lorem Ipsum Dolorer</div>
-                        </div>   
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end gallery item -->
-            <!-- start gallery item -->
-            <div class="col team-block text-start team-style-1 xl-margin-four-bottom md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInUp" data-wow-delay="0.4s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/900x650" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray">Jeremy Dup Lorem Ipsum Doloront</div>
-                        </div>   
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end gallery item -->
-            <!-- start gallery item -->
-            <div class="col team-block text-start team-style-1 xl-margin-four-bottom md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInUp">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/900x650" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray">Herman Mil Lorem Ipsum Dolorler</div>
-                        </div>   
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end gallery item -->
-            <!-- start gallery item -->
-            <div class="col team-block text-start team-style-1 xl-margin-four-bottom md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInUp" data-wow-delay="0.2s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/900x650" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray">Bill Gardn Lorem Ipsum Dolorer</div>
-                        </div>   
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end gallery item -->
-            <!-- start gallery item -->
-            <div class="col team-block text-start team-style-1 xl-margin-four-bottom md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInUp" data-wow-delay="0.4s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/900x650" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray">Jeremy Dup Lorem Ipsum Doloront</div>
-                        </div>   
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end gallery item -->
-        </div>  
-        <!-- end team section -->
+        </div>
         
         <!-- start pagination -->
         <div class=" text-center margin-100px-top md-margin-50px-top wow animate__fadeInUp">

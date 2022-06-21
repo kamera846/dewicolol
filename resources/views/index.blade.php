@@ -56,468 +56,197 @@
     </div>
 </section>
 <!-- end slider section --> 
-<!-- start section -->
+<!-- start story section -->
 <section class="wow animate__fadeIn">
-    <div class="container">
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 justify-content-center">
-            <!-- start feature box item -->
-            <div class="col feature-box-1 md-margin-60px-bottom sm-margin-40px-bottom wow animate__fadeIn last-paragraph-no-margin">
-                <div class="d-flex align-items-center margin-15px-bottom alt-font">
-                    <h3 class="char-value text-deep-pink letter-spacing-minus-1 text-medium-gray font-weight-600 mb-0">01.</h3>
-                    <span class="text-large text-extra-dark-gray line-height-22 padding-20px-left w-100">Creativity.<br> Discover talent.</span>
-                </div>
-                <p class="w-90 md-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry.</p>
+    <div class="container"> 
+        <div class="row align-items-center mb-5 md-margin-0px-bottom">
+            <div class="col-12 col-lg-4 text-center md-margin-30px-bottom wow animate__fadeInLeft">
+                <img src="https://via.placeholder.com/500x730" alt="" class="border-radius-6 w-100">
+            </div> 
+            <div class="col-12 col-lg-8 text-center text-md-start padding-eight-lr lg-padding-six-lr md-padding-15px-lr wow animate__fadeInRight" data-wow-delay="0.2s">
+                <h6 class="alt-font text-extra-dark-gray">Cerita Desa</h6>
+                <p class="margin-5px-top">1. Bukit Ziarah Boaala terletak di Desa Colol. Boaala diambil dari dua kata, boa (kuburan) dan ala (perang). Secara harafiah Boaala bermakna kuburan korban perang. Peninggalan tersebut mengandung nilai perjuangan para leluhur dalam mempertahankan daerah Colol dari serangan tentara Bima. Pertempuran tersebut dimenangkan oleh para leluhur warga Colol.
+                Kekalahan tersebut menyebabkan tentara Bima mendirikan monuman tanda (batu sumpah) untuk tidak melakukan penyerangan lagi. Batu tanda tersebut masih berdiri megah sampai sekarang di Golo Leda. Para tentara Bima yang tewas dikuburkan di Desa Colol. 
+                </p>
+                <p>2. Keberadaan Kawasan Lembah Colol sebagai penyumbang terbesar sekaligus induk pengembangan kopi di Manggarai Raya, tidak terpisahkan dengan kehadiran pemerintah kolonial Belanda. Pada tahun 1937 pemerintah kolonial Belanda tahun 1937 menggelar sayembara penanaman kopi yang disebut ”Pertandingan Keboen”. Pesertanya adalah warga di Manggarai Raya. Sayembara itu sejalan dengan kebijakan Raja Manggarai saat itu, Alexander Baruk (1931-1945), yang gencar mengenalkan budidaya padi dan tanaman perkebunan kepada rakyatnya. Melalui seleksi sangat ketat, seorang petani Colol bernama Bernadus Odjong keluar sebagai pemenang ”Pertandingan Keboen” itu. Ia dihadiahi bendera tua tiga warna, merah, putih, dan biru berukuran 160 sentimeter x 200 sentimeter.
+                </p>
             </div>
-            <!-- end feature box item -->
-            <!-- start feature box item -->
-            <div class="col feature-box-1 md-margin-60px-bottom sm-margin-40px-bottom wow animate__fadeIn last-paragraph-no-margin" data-wow-delay="0.2s">
-                <div class="d-flex align-items-center margin-15px-bottom alt-font">
-                    <h3 class="char-value text-deep-pink letter-spacing-minus-1 text-medium-gray font-weight-600 mb-0">02.</h3>
-                    <span class="text-large text-extra-dark-gray line-height-22 padding-20px-left w-100">Technology.<br> Expert analysis.</span>
-                </div>
-                <p class="w-90 md-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry.</p>
-            </div>
-            <!-- end feature box item -->
-            <!-- start feature box item -->
-            <div class="col feature-box-1 wow animate__fadeIn last-paragraph-no-margin" data-wow-delay="0.4s">
-                <div class="d-flex align-items-center margin-15px-bottom alt-font">
-                    <h3 class="char-value text-deep-pink letter-spacing-minus-1 text-medium-gray font-weight-600 mb-0">03.</h3>
-                    <span class="text-large text-extra-dark-gray line-height-22 padding-20px-left w-100">Discover.<br> Explore work.</span>
-                </div>
-                <p class="w-90 md-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry.</p>
-            </div>
-            <!-- end feature box item -->
         </div>
     </div>
 </section>
-<!-- end section -->
-<!-- start feature section -->
-<section class="p-0 wow animate__fadeIn bg-light-gray">
-    <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-lg-2">
-            <div class="col cover-background wow animate__fadeInLeft md-h-450px" style="background-image:url('https://via.placeholder.com/960x683');"></div>
-            <div class="col padding-five-all md-padding-ten-all sm-padding-50px-tb md-padding-15px-lr wow animate__fadeInRight ">
-                <div class="row m-0">
-                    <div class="col-12 col-xl-11 margin-five-bottom lg-margin-six-bottom md-margin-40px-bottom sm-margin-30px-bottom sm-no-padding-lr">
-                        <h4 class="alt-font text-extra-dark-gray font-weight-600 text-center text-lg-start md-w-70 mx-auto mx-lg-0 md-no-margin-bottom sm-w-75 xs-w-100">We are delivering beautiful digital products for you</h4>
-                    </div>
+<!-- end story section -->
+<!-- start feature box  -->
+<section class="bg-extra-dark-gray wow animate__fadeIn md-padding-one-half-lr sm-padding-two-lr">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- feature box item-->
+            <div class="col-12 col-lg-4 col-md-6 col-sm-10 feature-box-1 md-margin-60px-bottom sm-margin-40px-bottom wow animate__fadeInRight">
+                <div class="d-flex align-items-center margin-15px-bottom alt-font">
+                    <span class="text-large line-height-22 padding-20px-left sm-padding-15px w-100">Spot Wisata</span>
                 </div>
-                <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-1 row-cols-md-2 row-cols-sm-2 m-0">
-                    <!-- start features box item -->
-                    <div class="col margin-six-bottom md-margin-50px-bottom sm-margin-40px-bottom last-paragraph-no-margin">
-                        <div class="feature-box-5 position-relative">
-                            <i class="icon-desktop text-medium-gray icon-medium"></i>
-                            <div class="feature-content">
-                                <div class="text-extra-dark-gray margin-5px-bottom alt-font font-weight-600">Elegant / Unique design</div>
-                                <p class="w-95 xl-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col margin-six-bottom md-margin-50px-bottom sm-margin-40px-bottom last-paragraph-no-margin" data-wow-delay="0.2s">
-                        <div class="feature-box-5 position-relative">
-                            <i class="icon-pricetags text-medium-gray icon-medium"></i>
-                            <div class="feature-content">
-                                <div class="text-extra-dark-gray margin-5px-bottom alt-font font-weight-600">Different Layout Type</div>
-                                <p class="w-95 xl-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col lg-margin-six-bottom md-margin-50px-bottom sm-margin-40px-bottom last-paragraph-no-margin" data-wow-delay="0.4s">
-                        <div class="feature-box-5 position-relative">
-                            <i class="icon-chat text-medium-gray icon-medium"></i>
-                            <div class="feature-content">
-                                <div class="text-extra-dark-gray margin-5px-bottom alt-font font-weight-600">Make it Simple</div>
-                                <p class="w-95 xl-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col last-paragraph-no-margin" data-wow-delay="0.6s">
-                        <div class="feature-box-5 position-relative ">
-                            <i class="icon-mobile text-medium-gray icon-medium"></i>
-                            <div class="feature-content">
-                                <div class="text-extra-dark-gray margin-5px-bottom alt-font font-weight-600">True Responsiveness</div>
-                                <p class="w-95 xl-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                </div>
+                <p class="w-90 lg-w-100">
+                    <ul>
+                        <li>Air Terjun Kembar Gajah</li>
+                        <li>Kawasan Agrowisata Colol</li>
+                        <li>Bukit Ziarah Boaala</li>
+                        <li>Air Terjun Cunca Panggol</li>
+                        <li>Air Terjun Cunca Wek</li>
+                        <li>Air Terjun Cunca Radi Ntangis</li>
+                        <li>Situs Sjarah Bendera Belanda</li>
+                    </ul>
+                </p>
+                <div class="separator-line-horrizontal-medium-light3 bg-deep-pink margin-5px-top float-start"></div>
             </div>
-        </div> 
+            <!-- end feature box item-->
+            <!-- feature box item-->
+            <div class="col-12 col-lg-4 col-md-6 col-sm-10 feature-box-1 md-margin-60px-bottom sm-margin-40px-bottom wow animate__fadeInRight">
+                <div class="d-flex align-items-center margin-15px-bottom alt-font">
+                    <span class="text-large line-height-22 padding-20px-left sm-padding-15px w-100">Fasilitas Desa</span>
+                </div>
+                <p class="w-90 lg-w-100">
+                    <ul>
+                        <li>Areal Parkir</li>
+                        <li>Balai Pertemuan</li>
+                        <li>Homestay/Rumah Tinggal/Guest House</li>
+                        <li>Kamar Mandi Umum</li>
+                        <li>Kios Souvenir</li>
+                        <li>Kuliner, Warung, Tempat Makan</li>
+                        <li>Selfie Area, Spot Foto</li>
+                    </ul>
+                </p>
+                <div class="separator-line-horrizontal-medium-light3 bg-deep-pink margin-5px-top float-start"></div>
+            </div>
+            <!-- end feature box item-->
+            <!-- feature box item-->
+            <div class="col-12 col-lg-4 col-md-6 col-sm-10 feature-box-1 md-margin-60px-bottom sm-margin-40px-bottom wow animate__fadeInRight">
+                <div class="d-flex align-items-center margin-15px-bottom alt-font">
+                    <span class="text-large line-height-22 padding-20px-left sm-padding-15px w-100">Makanan khas, Souvenir, <br> & Hasil Bumi</span>
+                </div>
+                <p class="w-90 lg-w-100">
+                    <ul>
+                        <li>Nasi Kaget Colol</li>
+                        <li>Gelang Kopi Colol</li>
+                        <li>Kopi Kemasan</li>
+                        <li>Kopi</li>
+                        <li>Ikan Air Tawar</li>
+                    </ul>
+                </p>
+                <div class="separator-line-horrizontal-medium-light3 bg-deep-pink margin-5px-top float-start"></div>
+            </div>
+            <!-- end feature box item-->
+        </div>
     </div>
 </section>
-<!-- end feature section -->
-<!-- start counter section -->
-<section class="wow animate__fadeIn">
-    <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
-            <!-- start counter item-->
-            <div class="col text-center md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp">
-                <div class="counter-feature-box-1 w-100 border-all padding-5px-all">
-                    <div class="counter-box bg-white d-flex justify-content-center flex-column h-100">
-                        <i class="icon-heart icon-medium text-medium-gray margin-15px-bottom"></i>
-                        <h6 class="d-block font-weight-600 text-extra-dark-gray alt-font mb-0 counter" data-to="4650" data-speed="2000">4650</h6>
-                        <span>Happy Clients</span>
-                    </div>
-                </div>
-            </div>
-            <!-- end counter item-->
-            <!-- start counter item-->
-            <div class="col text-center md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp" data-wow-delay="0.2s">
-                <div class="counter-feature-box-1 w-100 border-all padding-5px-all">
-                    <div class="counter-box bg-white d-flex justify-content-center flex-column h-100">
-                        <i class="icon-laptop icon-medium text-medium-gray margin-15px-bottom"></i>
-                        <h6 class="d-block font-weight-600 text-extra-dark-gray alt-font mb-0 counter" data-to="3790" data-speed="2000">3790</h6>
-                        <span>Project Completed</span>
-                    </div>
-                </div>
-            </div>
-            <!-- end counter item-->
-            <!-- start counter item-->
-            <div class="col text-center xs-margin-15px-bottom wow animate__fadeInUp" data-wow-delay="0.4s">
-                <div class="counter-feature-box-1 w-100 border-all padding-5px-all">
-                    <div class="counter-box bg-white d-flex justify-content-center flex-column h-100">
-                        <i class="icon-camera icon-medium text-medium-gray margin-15px-bottom"></i>
-                        <h6 class="d-block font-weight-600 text-extra-dark-gray alt-font mb-0 counter" data-to="5580" data-speed="2000">5580</h6>
-                        <span>Photo Capture</span>
-                    </div>
-                </div>
-            </div>
-            <!-- end counter item-->
-            <!-- start counter item-->
-            <div class="col text-center wow animate__fadeInUp" data-wow-delay="0.6s">
-                <div class="counter-feature-box-1 w-100 border-all padding-5px-all">
-                    <div class="counter-box bg-white d-flex justify-content-center flex-column h-100">
-                        <i class="icon-chat icon-medium text-medium-gray margin-15px-bottom"></i>
-                        <h6 class="d-block font-weight-600 text-extra-dark-gray alt-font mb-0 counter" data-to="8580" data-speed="2000">8580</h6>
-                        <span>Telephonic Talk</span>
-                    </div>
-                </div>
-            </div>
-            <!-- end counter item-->
-        </div>
-    </div>            
-</section>
-<!-- end counter section -->
-<!-- start recent work section -->
+<!-- end feature box -->
+<!-- start gallery section -->
 <section class="bg-light-gray wow animate__fadeIn">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-5 col-md-6 col-sm-8 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
-                <div class="alt-font text-medium-gray margin-5px-bottom text-uppercase text-small">Our recent works</div>
-                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">New stunning projects for our amazing clients</h5>
+                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">Beberapa Momen yang Anda Bisa Lihat</h5>
             </div>
         </div>
-        <div class="row">
+        <div class="row wow animate__fadeInUp">
             <div class="col-12 filter-content overflow-hidden">
-                <ul class="hover-option6 lightbox-portfolio portfolio-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large">
+                <ul class="hover-option2 portfolio-gallery portfolio-wrapper grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-medium" style="position: relative; height: 227.75px;">
                     <li class="grid-sizer"></li>
-                    <!-- start portfolio-item item -->
-                    <li class="grid-item wow animate__fadeInUp last-paragraph-no-margin">
-                        <figure>
-                            <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
-                                <img src="https://via.placeholder.com/800x650" alt=""/>
-                                <div class="portfolio-icon">
-                                    <a href="single-project-page-01.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                    <a class="gallery-link" title="Lightbox gallery image title..." href="https://via.placeholder.com/800x650"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
                                 </div>
-                            </div>
-                            <figcaption class="bg-white">
-                                <div class="portfolio-hover-main text-center">
-                                    <div class="portfolio-hover-box align-middle">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <a href="single-project-page-01.html"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block">Herbal Beauty Salon</span></a>
-                                            <p class="text-medium-gray text-extra-small text-uppercase">Branding and Identity</p>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </figcaption>
-                        </figure>
+                                </figcaption>
+                            </figure>
+                        </a>
                     </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
-                        <figure>
-                            <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
-                                <img src="https://via.placeholder.com/800x650" alt=""/>
-                                <div class="portfolio-icon">
-                                    <a href="single-project-page-02.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                    <a class="gallery-link" title="Lightbox gallery image title..." href="https://via.placeholder.com/800x650"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                    <!-- end image gallery item -->
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
                                 </div>
-                            </div>
-                            <figcaption class="bg-white">
-                                <div class="portfolio-hover-main text-center">
-                                    <div class="portfolio-hover-box align-middle">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <a href="single-project-page-02.html"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block">Tailoring Interior</span></a>
-                                            <p class="text-medium-gray text-extra-small text-uppercase">Branding and Brochure</p>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </figcaption>
-                        </figure>
+                                </figcaption>
+                            </figure>
+                        </a>
                     </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
-                        <figure>
-                            <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
-                                <img src="https://via.placeholder.com/800x650" alt=""/>
-                                <div class="portfolio-icon">
-                                    <a href="single-project-page-03.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                    <a class="gallery-link" title="Lightbox gallery image title..." href="https://via.placeholder.com/800x650"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                    <!-- end image gallery item -->
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
                                 </div>
-                            </div>
-                            <figcaption class="bg-white">
-                                <div class="portfolio-hover-main text-center">
-                                    <div class="portfolio-hover-box align-middle">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <a href="single-project-page-03.html"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block">Designblast Inc</span></a>
-                                            <p class="text-medium-gray text-extra-small text-uppercase">Web and Photography</p>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </figcaption>
-                        </figure>
+                                </figcaption>
+                            </figure>
+                        </a>
                     </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item wow animate__fadeInUp last-paragraph-no-margin">
-                        <figure>
-                            <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
-                                <img src="https://via.placeholder.com/800x650" alt=""/>
-                                <div class="portfolio-icon">
-                                    <a href="single-project-page-04.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                    <a class="gallery-link" title="Lightbox gallery image title..." href="https://via.placeholder.com/800x650"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                    <!-- end image gallery item -->
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
                                 </div>
-                            </div>
-                            <figcaption class="bg-white">
-                                <div class="portfolio-hover-main text-center">
-                                    <div class="portfolio-hover-box align-middle">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <a href="single-project-page-04.html"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block">HardDot Stone</span></a>
-                                            <p class="text-medium-gray text-extra-small text-uppercase">Branding and Identity</p>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </figcaption>
-                        </figure>
+                                </figcaption>
+                            </figure>
+                        </a>
                     </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
-                        <figure>
-                            <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
-                                <img src="https://via.placeholder.com/800x650" alt=""/>
-                                <div class="portfolio-icon">
-                                    <a href="single-project-page-05.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                    <a class="gallery-link" title="Lightbox gallery image title..." href="https://via.placeholder.com/800x650"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <figcaption class="bg-white">
-                                <div class="portfolio-hover-main text-center">
-                                    <div class="portfolio-hover-box align-middle">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <a href="single-project-page-05.html"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block">Crop Identity</span></a>
-                                            <p class="text-medium-gray text-extra-small text-uppercase">Branding and Brochure</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
-                        <figure>
-                            <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
-                                <img src="https://via.placeholder.com/800x650" alt=""/>
-                                <div class="portfolio-icon">
-                                    <a href="single-project-page-06.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                    <a class="gallery-link" title="Lightbox gallery image title..." href="https://via.placeholder.com/800x650"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <figcaption class="bg-white">
-                                <div class="portfolio-hover-main text-center">
-                                    <div class="portfolio-hover-box align-middle">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <a href="single-project-page-06.html"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase d-block">Violator Series</span></a>
-                                            <p class="text-medium-gray text-extra-small text-uppercase">Web and Photography</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <!-- end portfolio item -->
+                    <!-- end image gallery item -->
                 </ul>
             </div>
         </div>
     </div>
 </section>
-<!-- end recent work section -->
-<!-- start full width feature box -->
-<section class="p-0 wow animate__fadeIn">
-    <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2">
-            <!-- start features box item -->
-            <div class="col d-flex align-items-center text-center border-right border-bottom border-color-extra-light-gray xs-no-border-right wow animate__fadeInUp last-paragraph-no-margin">
-                <div class="padding-fifteen-all sm-padding-five-lr sm-padding-ten-tb">
-                    <i class="icon-desktop icon-large text-deep-pink"></i>
-                    <span class="d-block alt-font font-weight-600 text-extra-dark-gray margin-25px-top margin-10px-bottom">Elegant / Unique design</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
-                </div>
-            </div>
-            <!-- end features box item -->
-            <!-- start features box item -->
-            <div class="col d-flex align-items-center text-center border-right border-bottom border-color-extra-light-gray md-no-border-right wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
-                <div class="padding-fifteen-all sm-padding-five-lr sm-padding-ten-tb">
-                    <i class="icon-pricetags icon-large text-deep-pink"></i>
-                    <span class="d-block alt-font font-weight-600 text-extra-dark-gray margin-25px-top margin-10px-bottom">Different Layout Type</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
-                </div>
-            </div>
-            <!-- end features box item -->
-            <!-- start features box item -->
-            <div class="col d-flex align-items-center text-center border-right border-bottom border-color-extra-light-gray xs-no-border-right wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
-                <div class="padding-fifteen-all sm-padding-five-lr sm-padding-ten-tb">
-                    <i class="icon-target icon-large text-deep-pink"></i>
-                    <span class="d-block alt-font font-weight-600 text-extra-dark-gray margin-25px-top margin-10px-bottom">Testing for Perfection</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
-                </div>
-            </div>
-            <!-- end features box item -->
-            <!-- start features box item -->
-            <div class="col d-flex align-items-center text-center border-bottom border-color-extra-light-gray wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.6s">
-                <div class="padding-fifteen-all sm-padding-five-lr sm-padding-ten-tb">
-                    <i class="icon-mobile icon-large text-deep-pink"></i>
-                    <span class="d-block alt-font font-weight-600 text-extra-dark-gray margin-25px-top margin-10px-bottom">True Responsiveness</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
-                </div>
-            </div>
-            <!-- end features box item -->
-        </div>
-    </div>
-</section>
-<!-- end full width feature box -->
-<!-- start section -->
-<section class="wow animate__fadeIn">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-xl-5 col-md-6 margin-five-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
-                <div class="alt-font text-medium-gray margin-5px-bottom text-uppercase text-small">Why Choose Us?</div>
-                <h5 class="alt-font text-extra-dark-gray font-weight-600">We deliver 100% and provide instant response</h5>
-                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry.</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 text-center"><img src="images/screen.jpg" alt=""></div>
-        </div>
-    </div>
-</section>
-<!-- end section -->
-<!-- start services section -->
-<section class="wow animate__fadeIn bg-extra-dark-gray">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-6 position-relative text-center md-margin-50px-bottom sm-margin-30px-bottom">
-                <a class="popup-youtube" href="https://www.youtube.com/watch?v=sU3FkzUKHXU">
-                    <img src="https://via.placeholder.com/900x650" alt="" class="w-100">
-                    <div class="icon-play">
-                        <div class="absolute-middle-center">
-                            <img src="images/icon-play.png" alt="">
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg-6 last-paragraph-no-margin">
-                <div class="padding-twelve-left text-center text-lg-start md-no-padding-lr">
-                    <h5 class="alt-font text-white-2">We provide high quality and cost effective services</h5>
-                    <p class="text-extra-large w-90 font-weight-300 text-extra-light-gray lg-w-100">Since our foundation in 2005 our goal has been to use digital technology to create experiences.</p>
-                    <p class="w-90 lg-w-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry. Lorem Ipsum has been the industry's standard dummy text since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a href="services-classic.html" class="btn btn-small btn-rounded btn-transparent-white margin-30px-top">Explore services</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end services section -->
-<!-- start testimonial section -->
-<section class="bg-light-gray wow animate__fadeIn">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-xl-5 col-md-6 col-sm-8 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
-                <div class="alt-font text-medium-gray margin-5px-bottom text-uppercase text-small">What people say</div>
-                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">We have received tons of awesome testimonials</h5>
-            </div>
-        </div>
-        <div class="row position-relative justify-content-center">
-            <div class="col-12 col-md-12 col-sm-9">
-                <div class="swiper-container swiper-pagination-bottom black-move blog-slider" data-slider-options='{ "slidesPerView": "1", "allowTouchMove":true, "loop":false, "spaceBetween": 30, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next-1", "prevEl": ".swiper-button-prev-1" }, "breakpoints": { "992": { "slidesPerView":"3" }, "768": { "slidesPerView":"2" } }, "pagination": { "el": ".swiper-pagination", "clickable": true } }'>
-                    <div class="swiper-wrapper">
-                        <!-- start testimonial item -->
-                        <div class="swiper-slide">
-                            <div class="margin-half-all bg-white box-shadow-light text-center padding-fourteen-all h-100 sm-padding-30px-all">
-                                <img src="https://via.placeholder.com/149x149" class="rounded-circle w-100px h-100px margin-25px-bottom md-margin-15px-bottom" alt=""/>
-                                <p class="md-margin-15px-bottom sm-margin-20px-bottom">I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.</p>
-                                <span class="text-extra-dark-gray text-small text-uppercase d-block line-height-10 alt-font font-weight-600">Shoko Mugikura</span>
-                                <span class="text-light-gray2 text-extra-small text-uppercase text-medium-gray">Design Manager</span>
-                            </div>
-                        </div>
-                        <!-- end testimonial item -->
-                        <!-- start testimonial item -->
-                        <div class="swiper-slide">
-                            <div class="margin-half-all bg-white box-shadow-light text-center padding-fourteen-all h-100 sm-padding-30px-all">
-                                <img src="https://via.placeholder.com/149x149" class="rounded-circle w-100px h-100px margin-25px-bottom md-margin-15px-bottom" alt=""/>
-                                <p class="md-margin-15px-bottom sm-margin-20px-bottom">Trust us we looked for a very long time and wasted thousands of dollars testing other teams, freelancers, and outsource companies.</p>
-                                <span class="text-extra-dark-gray text-small text-uppercase d-block line-height-10 alt-font font-weight-600">Alexander Harvard</span>
-                                <span class="text-light-gray2 text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</span>
-                            </div>
-                        </div>
-                        <!-- end testimonial item -->
-                        <!-- start testimonial item -->
-                        <div class="swiper-slide">
-                            <div class="margin-half-all bg-white box-shadow-light text-center padding-fourteen-all h-100 sm-padding-30px-all">
-                                <img src="https://via.placeholder.com/149x149" class="rounded-circle w-100px h-100px margin-25px-bottom md-margin-15px-bottom" alt=""/>
-                                <p class="md-margin-15px-bottom sm-margin-20px-bottom">This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website.</p>
-                                <span class="text-extra-dark-gray text-small text-uppercase d-block line-height-10 alt-font font-weight-600">Lindsay Swanson</span>
-                                <span class="text-light-gray2 text-extra-small text-uppercase text-medium-gray">Creative Director</span>
-                            </div>
-                        </div>
-                        <!-- end testimonial item -->
-                        <!-- start testimonial item -->
-                        <div class="swiper-slide">
-                            <div class="margin-half-all bg-white box-shadow-light text-center padding-fourteen-all h-100 sm-padding-30px-all">
-                                <img src="https://via.placeholder.com/149x149" class="rounded-circle w-100px h-100px margin-25px-bottom md-margin-15px-bottom" alt=""/>
-                                <p class="md-margin-15px-bottom sm-margin-20px-bottom">Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks again guys for all your hard work.</p>
-                                <span class="text-extra-dark-gray text-small text-uppercase d-block line-height-10 alt-font font-weight-600">Herman Miller</span>
-                                <span class="text-light-gray2 text-extra-small text-uppercase text-medium-gray">Creative Director</span>
-                            </div>
-                        </div>
-                        <!-- end testimonial item -->
-                    </div>                        
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end testimonial section -->
+<!-- end gallery section -->
+
 <!-- start blog section -->
 <section class="wow animate__fadeIn">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-8 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
-                <div class="alt-font text-medium-gray margin-5px-bottom text-uppercase text-small">Latest Blogs</div>
-                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">Publish what you think, don't put it on social media</h5>
+                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">Artikel Terbaru</h5>
             </div>
         </div>
         <div class="row">
@@ -528,17 +257,17 @@
                     <li class="grid-item last-paragraph-no-margin text-center text-sm-start wow animate__fadeInUp">
                         <div class="blog-post bg-light-gray">
                             <div class="blog-post-images overflow-hidden position-relative">
-                                <a href="blog-post-layout-01.html">
+                                <a href="/blog/slug">
                                     <img src="https://via.placeholder.com/900x650" alt="">
                                     <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
                                 </a>
                             </div>
                             <div class="post-details padding-40px-all md-padding-20px-all">
-                                <a href="blog-post-layout-01.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">I like the body. I like to design everything to do with the body.</a>
+                                <a href="/blog/slug" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">I like the body. I like to design everything to do with the body.</a>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
                                 <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
                                 <div class="author">
-                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="blog-grid.html" class="text-medium-gray">Jay Benjamin</a>&nbsp;&nbsp;|&nbsp;&nbsp;20 April 2017</span>
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">Oleh Jay Benjamin&nbsp;&nbsp;|&nbsp;&nbsp;20 April 2017</span>
                                 </div>
                             </div>
                         </div>
@@ -548,17 +277,17 @@
                     <li class="grid-item last-paragraph-no-margin text-center text-sm-start wow animate__fadeInUp" data-wow-delay="0.2s">
                         <div class="blog-post bg-light-gray">
                             <div class="blog-post-images overflow-hidden position-relative">
-                                <a href="blog-post-layout-01.html">
+                                <a href="/blog/slug">
                                     <img src="https://via.placeholder.com/900x650" alt="">
                                     <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
                                 </a>
                             </div>
                             <div class="post-details padding-40px-all md-padding-20px-all">
-                                <a href="blog-post-layout-01.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Styles come and go. Design is a language, not a style.</a>
+                                <a href="/blog/slug" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Styles come and go. Design is a language, not a style.</a>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
                                 <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
                                 <div class="author">
-                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="blog-grid.html" class="text-medium-gray">Herman Miller</a>&nbsp;&nbsp;|&nbsp;&nbsp;20 April 2017</span>
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">Oleh Herman Miller&nbsp;&nbsp;|&nbsp;&nbsp;20 April 2017</span>
                                 </div>
                             </div>
                         </div>
@@ -568,17 +297,17 @@
                     <li class="grid-item last-paragraph-no-margin text-center text-sm-start wow animate__fadeInUp" data-wow-delay="0.4s">
                         <div class="blog-post bg-light-gray">
                             <div class="blog-post-images overflow-hidden position-relative">
-                                <a href="blog-post-layout-01.html">
+                                <a href="/blog/slug">
                                     <img src="https://via.placeholder.com/900x650" alt="">
                                     <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
                                 </a>
                             </div>
                             <div class="post-details padding-40px-all md-padding-20px-all">
-                                <a href="blog-post-layout-01.html" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Recognizing the need is the primary condition for design.</a>
+                                <a href="/blog/slug" class="alt-font post-title text-medium text-extra-dark-gray w-100 d-block lg-w-100 margin-15px-bottom">Recognizing the need is the primary condition for design.</a>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy....</p>
                                 <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
                                 <div class="author">
-                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by <a href="blog-grid.html" class="text-medium-gray">Hugh Macleod</a>&nbsp;&nbsp;|&nbsp;&nbsp;15 March 2017</span>
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">Oleh Hugh Macleod&nbsp;&nbsp;|&nbsp;&nbsp;15 March 2017</span>
                                 </div>
                             </div>
                         </div>
