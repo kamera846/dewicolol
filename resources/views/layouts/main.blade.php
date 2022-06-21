@@ -83,7 +83,7 @@
 
         <!-- start footer --> 
         <footer class="footer-standard-dark bg-extra-dark-gray"> 
-            <div class="footer-widget-area padding-five-tb sm-padding-30px-tb">
+            <div class="footer-widget-area padding-three-tb sm-padding-40px-tb">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-lg-3 col-md-6 widget md-margin-30px-bottom text-center text-sm-start">
@@ -119,16 +119,16 @@
                             <div class="widget-title alt-font  text-medium-gray text-uppercase margin-10px-bottom font-weight-600">Info Kontak</div>
                             <div class="">Email: <a href="mailto:desaloha@gmail.com">desaloha@gmail.com</a></div>
                             <div class="margin-15px-bottom">Telepon: +62 823-3912-2463</div>
-                            <p class="d-block w-80 sm-w-100 margin-0px-bottom">Desa Colol Kecamatan Lamba Leda Timur Kabupaten Manggarai Timur - NTT</p>
+                            <p class="d-block w-80 sm-w-100 margin-0px-bottom">Desa Colol Kecamatan Lamba Leda Timur <br> Kabupaten Manggarai Timur - NTT</p>
                         <!-- end contact information -->
                     </div>
                 </div>
             </div>
-            <div class="bg-dark-footer padding-50px-tb text-center sm-padding-30px-tb">
-                <div class="container">
-                    <div class="row">
+            <div class="container margin-20px-top">
+                <div class="border-color-medium-dark-gray border-top padding-40px-top">
+                    <div class="row"> 
                         <!-- start copyright -->
-                        <div class="col  text-center">© {{ date('Y') }} Colol - Powered by <a href="https://jongkreatif.id" target="_blank" class="text-dark-gray">JongKreatif</a>.</div>
+                        <div class="text-center">© {{ date('Y') }} Colol - Powered by <a href="https://jongkreatif.id" target="_blank" class="text-dark-gray">JongKreatif</a>.</div>
                         <!-- end copyright -->
                     </div>
                 </div>
