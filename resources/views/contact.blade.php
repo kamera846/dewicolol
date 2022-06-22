@@ -57,8 +57,8 @@
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col cover-background md-h-450px sm-h-350px wow animate__fadeIn" style="background: url(https://via.placeholder.com/1200x854)"></div>
             <div class="col text-center padding-six-lr padding-five-half-tb lg-padding-four-lr md-padding-ten-half-tb md-padding-twelve-half-lr sm-padding-15px-lr wow animate__fadeIn">
-                <h5 class=" text-white-2 alt-font font-weight-700 text-uppercase margin-5px-bottom sm-margin-three-bottom">Kirimi Kami Pesan</h5>
-                <div class="text-medium-gray alt-font text-small sm-margin-ten-bottom margin-55px-bottom">Hubungi kami untuk mendapat jawaban dari pertanyaan anda dan info lebih lanjut tentang desa kami!</div>
+                <h5 class=" text-white-2 alt-font font-weight-700 text-uppercase margin-5px-bottom sm-margin-three-bottom">Hubungi Kami</h5>
+                <div class="text-medium-gray alt-font text-small sm-margin-ten-bottom margin-55px-bottom">Jangan ragu untuk menghubungi kami jika anda punya pertanyaan, dukungan, atau saran agaar kami lebih baik!</div>
                 <form id="project-contact-form-4" method="post" target="_blank" autocomplete="off">
                     <div class="row">
                         <div class="col-12">

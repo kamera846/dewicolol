@@ -138,12 +138,12 @@
     </div>
 </section>
 <!-- end feature box -->
-<!-- start gallery section -->
-<section class="bg-light-gray wow animate__fadeIn">
+
+<section class="wow animate__fadeIn">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-5 col-md-6 col-sm-8 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
-                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">Beberapa Momen yang Anda Bisa Lihat</h5>
+            <div class="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-8 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
+                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">Momen yang bisa sempat kami abadikan</h5>
             </div>
         </div>
         <div class="row wow animate__fadeInUp">
@@ -213,33 +213,12 @@
                         </a>
                     </li>
                     <!-- end image gallery item -->
-                    <!-- start image gallery item -->
-                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
-                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
-                            <figure>
-                                <div class="portfolio-img bg-extra-dark-gray">
-                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
-                                </div>
-                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
-                                <figcaption>
-                                    <div class="portfolio-hover-main text-center">
-                                        <div class="portfolio-hover-box align-middle">
-                                            <div class="portfolio-hover-content position-relative">
-                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <!-- end image gallery item -->
                 </ul>
             </div>
         </div>
     </div>
 </section>
-<!-- end gallery section -->
+<!-- end galleery content section -->
 
 <!-- start blog section -->
 <section class="wow animate__fadeIn">
