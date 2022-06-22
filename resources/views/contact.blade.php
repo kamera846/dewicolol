@@ -1,161 +1,106 @@
 @extends('layouts.main')
 
 @section('page-content')
-    <section class="page-title" style="background-image: url(assets/images/background/bg-9.jpg)">
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="content-wrapper">
-                    <div class="title">
-                        <h1>Kontak Kami.</h1>
-                    </div>
-                    <ul class="bread-crumb">
-                        <li><a href="./">Beranda</a></li>
-                        <li>Kontak Kami</li>
-                    </ul>
-                </div>
+    
+<!-- start page title section -->
+<section class="wow animate__fadeIn parallax" data-parallax-background-ratio="0.5" style="background-image:url('https://via.placeholder.com/1920x1100');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-12 extra-small-screen page-title-large d-flex flex-column justify-content-center text-center">
+                <!-- start page title -->
+                <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-15px-bottom">Kontak Kami</h1>
+                <!-- end page title -->
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- end page title section -->
+<!-- start contact info -->
+<section class="wow animate__fadeIn">
+    <div class="container px-0">
+        <div class="row justify-content-center row-cols-1 row-cols-lg-4 row-cols-sm-2">
+            <!-- start contact info item -->
+            <div class="col text-center md-margin-eight-bottom sm-margin-30px-bottom wow animate__fadeInUp last-paragraph-no-margin">
+                <div class="d-inline-block margin-20px-bottom">
+                    <div class="bg-extra-dark-gray icon-round-medium"><i class="icon-map-pin icon-medium text-white-2"></i></div>
+                </div>
+                <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">Kunjungi Desa</div>
+                <p class="mx-auto">Desa Colol Kecamatan Lamba Leda Timur <br> Kabupaten Manggarai Timur - NTT</p>
+            </div>
+            <!-- end contact info item -->
+            <!-- start contact info item -->
+            <div class="col text-center md-margin-eight-bottom sm-margin-30px-bottom wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
+                <div class="d-inline-block margin-20px-bottom">
+                    <div class="bg-extra-dark-gray icon-round-medium"><i class="icon-chat icon-medium text-white-2"></i></div>
+                </div>
+                <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">Telpon Kami</div>
+                <p class="mx-auto">+62 823-3912-2463</p>
+            </div>
+            <!-- end contact info item -->
+            <!-- start contact info item -->
+            <div class="col text-center xs-margin-30px-bottom wow animate__fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
+                <div class="d-inline-block margin-20px-bottom">
+                    <div class="bg-extra-dark-gray icon-round-medium"><i class="icon-envelope icon-medium text-white-2"></i></div>
+                </div>
+                <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">E-mail Kami</div>
+                <p class="mx-auto">desacolol@gmail.com</p>
+            </div>
+            <!-- end contact info item -->
+        </div>
+    </div>
+</section>
+<!-- end contact info section -->
+<!-- start contact form -->
+<section id="contact" class="wow animate__fadeIn p-0 bg-extra-dark-gray">
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col cover-background md-h-450px sm-h-350px wow animate__fadeIn" style="background: url(https://via.placeholder.com/1200x854)"></div>
+            <div class="col text-center padding-six-lr padding-five-half-tb lg-padding-four-lr md-padding-ten-half-tb md-padding-twelve-half-lr sm-padding-15px-lr wow animate__fadeIn">
+                <h5 class=" text-white-2 alt-font font-weight-700 text-uppercase margin-5px-bottom sm-margin-three-bottom">Hubungi Kami</h5>
+                <div class="text-medium-gray alt-font text-small sm-margin-ten-bottom margin-55px-bottom">Jangan ragu untuk menghubungi kami jika anda punya pertanyaan, dukungan, atau saran agaar kami lebih baik!</div>
+                <form id="project-contact-form-4" method="post" target="_blank" autocomplete="off">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-results d-none"></div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" name="nama" id="nama" placeholder="Nama lengkap *" class="bg-transparent border-color-medium-dark-gray medium-input required" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="email" name="email" id="email" placeholder="Alamat E-mail *" class="bg-transparent border-color-medium-dark-gray medium-input required" required>
+                        </div>
 
-    <!-- Contact Form section -->
-    <section class="contact-form-section">
-        <div class="auto-container">
-            <div class="wrapper-box">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="our-facts" style="background-image: url(assets/images/resource/image-54.jpg)">
-                            <div class="column counter-column">
-                                <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="icon-outer">
-                                        <div class="icon"><span class="icon-ambulance"></span></div>
-                                    </div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="345">0</span>
-                                    </div>
-                                    <div class="text">
-                                        For Any Type of <br />
-                                        Medical Emergency
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column counter-column">
-                                <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="icon-outer">
-                                        <div class="icon"><span class="icon-police"></span></div>
-                                    </div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="911">0</span>
-                                    </div>
-                                    <div class="text">
-                                        For Police and <br />
-                                        Law Enforcement
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column counter-column">
-                                <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="icon-outer">
-                                        <div class="icon"><span class="icon-recyclebin"></span></div>
-                                    </div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="667">0</span>
-                                    </div>
-                                    <div class="text">
-                                        For Recycling And <br />
-                                        Garbage Related
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="contact-form-area">
-                            <div class="sec-title mb-30">
-                                <h2>
-                                    Mencari Bantuan <br />
-                                    Atau Punya Pertanyaan
-                                </h2>
-                            </div>
-                            <div class="text mb-30">
-                                Enim ad minim veniam quis nostrud exercitation ullamco laboris aliquip <br />
-                                ex ea reprehenderit sint occaecat cupidata proids.
-                            </div>
-                            <!--Contact Form-->
-                            <div class="contact-form">
-                                <form method="post" target="_blank" id="contact-form">
-                                    <div class="row">
-                                        <div class="form-group col-md-12">
-                                            <input type="text" name="nama" placeholder="Your Name" required />
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <input type="email" name="email" placeholder="Your Email" required />
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <input type="text" name="subjek" placeholder="Subject" required />
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <textarea name="pesan" placeholder="Message"></textarea>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <button class="theme-btn btn-style-one" type="submit" name="submit" data-loading-text="Please wait..."><span>Send Message</span></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        {{-- nomor --}}
+                        <input type="hidden" name="nomor" value="082339122463" />
 
-    <!-- Contact Info section -->
-    <section class="contact-info-section">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-info-block">
-                        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75109.29008032546!2d120.54631567794!3d-8.357729900719299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db3bcd05cf6c737%3A0x250909596892d132!2sKec.%20Lamba%20Leda%2C%20Kabupaten%20Manggarai%20Timur%2C%20Nusa%20Tenggara%20Tim.!5e0!3m2!1sid!2sid!4v1654248852511!5m2!1sid!2sid"
-                            width="100%"
-                            height="450"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-info-block">
-                        <h3>City Muncipal Office</h3>
-                        <div class="text mb-30">
-                            Fugiat nulla pariatur excepteur sint occaecat proident <br />
-                            sunt in culp mollit anim id est laborum.
+                        <div class="col-12">
+                            <textarea name="pesan" id="pesan" placeholder="Isi pesan anda" rows="7" class="bg-transparent border-color-medium-dark-gray medium-textarea" required></textarea>
                         </div>
-                        <ul class="contact-info">
-                            <li>
-                                <div class="icon"><img src="assets/images/icons/icon-1.png" alt="" /></div>
-                                <div class="text"><strong>Lokasi</strong>Desa Colol, Kecamatan Lamba Leda Timur, Kabupaten Manggrai Timur</div>
-                            </li>
-                            <li>
-                                <div class="icon"><img src="assets/images/icons/icon-2.png" alt="" /></div>
-                                <div class="text">
-                                    <strong>Telepon</strong>
-                                    <a href="tel:+1(345)2067849">+ 1 (345) 206 7849</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon"><img src="assets/images/icons/icon-3.png" alt="" /></div>
-                                <div class="text">
-                                    <strong>Email</strong>
-                                    <a href="mailto:munciple@example.net">munciple@example.net</a>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="col-12 text-center">
+                            <button id="project-contact-us-4-button" type="submit" class="btn btn-deep-pink btn-medium margin-15px-top submit">Kirim Pesan</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- end contact form -->
+<!-- start social section -->
+<section class="wow animate__fadeIn">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center social-style-1 social-icon-style-5">
+                <ul class="large-icon mb-0">
+                    <li><a class="facebook" href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i><span></span></a></li>
+                    <li><a class="twitter" href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i><span></span></a></li>
+                    <li><a class="google" href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i><span></span></a></li>
+                </ul>
+            </div>                   
+        </div>
+    </div>
+</section>
+<!-- end social section -->
+
 @endsection

@@ -59,20 +59,18 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @guest
-                                    
-                                @endguest
                                 @foreach ($users as $user)
+                                @if ($user->role !== 'super-admin')
                                 <tr>
-                                    <td class="table-user">
+                                    <td class="table-user" style="object-fit: cover;overflow:hidden !important">
                                     @if ($user->foto_profil != null)
                                         <img src="{{asset('storage/' . $user->foto_profil)}}" class="avatar rounded-circle mr-3">
                                     @else
-                                        <img src="/storage/foto-profil/defaultuserimage.png" class="avatar rounded-circle mr-3">
+                                        <img src="{{ asset('/storage/foto-profil/defaultuserimage.png') }}" class="avatar rounded-circle mr-3">
                                     @endif
                                     </td>
                                     <td>
-                                        <b>{{ $user->nama }}</b>
+                                        <b>{{ ucwords($user->nama) }}</b>
                                     </td>
                                     <td>
                                         <a href="mailto:jhonmichael@gmail.com" target="_blank" class="font-weight-bold">{{ $user->email }}</a>
@@ -81,7 +79,7 @@
                                         <span class="font-weight-bold">{{ $user->alamat }}</span>
                                     </td>
                                     <td>
-                                        <span class="font-weight-bold">{{ $user->pekerjaan }}</span>
+                                        <span class="font-weight-bold">{{ ucwords($user->pekerjaan) }}</span>
                                     </td>
                                     <td>
                                         <span class="font-weight-bold">{{ $user->no_hp }}</span>
@@ -90,15 +88,12 @@
                                         <span class="font-weight-bold">{{ $user->role }}</span>
                                     </td>
                                     <td class="table-actions">
-                                        <a href="/dashboard/user/{{ $user->id }}/detail" class="table-action" data-toggle="tooltip" data-original-title="Detail pengguna">
+                                        {{-- <a href="/dashboard/user/{{ $user->id }}/detail" class="table-action" data-toggle="tooltip" data-original-title="Detail pengguna">
                                             <i class="fas fa-info-circle"></i>
-                                        </a>
+                                        </a> --}}
                                         <a href="/dashboard/user/{{ $user->id }}/edit" class="table-action" data-toggle="tooltip" data-original-title="Edit pengguna">
                                             <i class="fas fa-user-edit"></i>
                                         </a>
-                                        {{-- <a href="/dashboard/user/{{ $user->id }}/delete" class="table-action table-action-delete" id="hapus" data-toggle="tooltip" data-original-title="Hapus pengguna">
-                                            <i class="fas fa-trash"></i>
-                                        </a> --}}
                                         <form action="/dashboard/user/{{ $user->id }}/delete" method="post" class="p-0 m-0 d-inline" id="form">
                                             @csrf
                                             @method('delete')
@@ -108,6 +103,7 @@
                                         </form>
                                     </td>
                                 </tr>
+                                @endif
                                 @endforeach
                             </tbody>
                         </table>

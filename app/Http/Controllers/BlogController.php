@@ -2,29 +2,38 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Str;
 use App\Models\Blog;
-use App\Models\Gallery;
-use Illuminate\Support\Facades\Storage;
+use App\Models\Social;
+use App\Models\Setting;
+use App\Models\Section;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
+
+    public function upload($fotoProfil) {
+        $uid = uniqid().".".$fotoProfil->getClientOriginalExtension();
+        $fotoProfil->move(public_path('storage'), $uid);
+        return $uid;
+    }
 
     public function index()
     {
         return view('dashboard.blog', [
             'blogs' => Blog::latest('updated_at')->get(),
+            'settings' => Setting::get(),
             'judul_halaman' => 'Admin | Data Postingan'
         ]);
     }
 
-
     public function create()
     {
         return view('dashboard.add-post', [
-            'judul_halaman' => 'Admin | Tambah Postingan'
+            'judul_halaman' => 'Admin | Tambah Postingan',
+            'settings' => Setting::get(),
         ]);
     }
 
@@ -37,10 +46,10 @@ class BlogController extends Controller
             'konten' => 'required',
         ]);
 
-        $gambarBlog = $request->file('gambar_blog')->store('image_blog');
+        // $gambarBlog = $request->file('gambar_blog')->store('image_blog');
 
         Blog::create([
-            'gambar_blog' => $gambarBlog,
+            'gambar_blog' => $this->upload($request->file('gambar_blog')),
             'judul' => $request->judul,
             'slug' => str::of($request->judul)->slug('-'),
             'penulis' => Auth::user()->nama,
@@ -55,7 +64,8 @@ class BlogController extends Controller
     {
         return view('dashboard.detail-post', [
             'judul_halaman' => 'Admin | Detail Postingan',
-            'blog' => $blog
+            'blog' => $blog,
+            'settings' => Setting::get(),
         ]);
     }
 
@@ -64,7 +74,8 @@ class BlogController extends Controller
     {
         return view('dashboard.edit-post', [
             'judul_halaman' => 'Admin | Edit Postingan',
-            'blog' => $blog
+            'blog' => $blog,
+            'settings' => Setting::get(),
         ]);
     }
 
@@ -80,10 +91,10 @@ class BlogController extends Controller
             if ($request->oldBlog) {
                 Storage::delete($request->oldBlog);
             }
-            $updateGambarBlog = $request->file('gambar_blog')->store('image_blog');
+            // $updateGambarBlog = $request->file('gambar_blog')->store('image_blog');
             Blog::where('id', $blog->id)
                 ->update([
-                    'gambar_blog' => $updateGambarBlog,
+                    'gambar_blog' => $this->upload($request->file('gambar_blog')),
                     'judul' => $request->judul,
                     'slug' => str::of($request->judul)->slug('-'),
                     'konten' => $request->konten
@@ -108,5 +119,66 @@ class BlogController extends Controller
         }
         Blog::destroy($blog->id);
         return redirect('/dashboard/blog')->with('success', 'menghapus');
+    }
+
+    public function landingPage()
+    {
+        $settings = Setting::get();
+        foreach ($settings as $setting) {
+            if ($setting->web_title !== null) {
+                return view('blog', [
+                    'blogs' => Blog::latest('updated_at')->cari()->paginate(3),
+                    'judul_halaman' => 'Blog | '  . $setting->web_title,
+                    'jumlah_blog' => Blog::cari()->count(),
+                    'recentPosts' => Blog::latest('updated_at')->limit(3)->get(),
+                    'settings' => Setting::get(),
+                    'socials' => Social::get(),
+                    'sections' => Section::get(),
+                    'newBlogs' => Blog::latest('updated_at')->get(),
+                ]);
+            } else {
+                return view('blog', [
+                    'blogs' => Blog::latest('updated_at')->cari()->paginate(3),
+                    'judul_halaman' => 'Blog',
+                    'jumlah_blog' => Blog::cari()->count(),
+                    'recentPosts' => Blog::latest('updated_at')->limit(3)->get(),
+                    'settings' => Setting::get(),
+                    'socials' => Social::get(),
+                    'sections' => Section::get(),
+                    'newBlogs' => Blog::latest('updated_at')->get(),
+                ]);
+            }
+        }
+    }
+
+
+    public function postDetails(Blog $blog)
+    {
+        $settings = Setting::get();
+        foreach ($settings as $setting) {
+            if ($setting->web_title !== null) {
+                return view('blog-details', [
+                    'judul_halaman' => $blog->judul . ' | '  . $setting->web_title,
+                    'blog' => $blog,
+                    'recentPosts' => Blog::latest('updated_at')->limit(3)->get(),
+                    'tes' => 'oke',
+                    'settings' => Setting::get(),
+                    'socials' => Social::get(),
+                    'newBlogs' => Blog::latest('updated_at')->get(),
+                    'sections' => Section::get()
+                ]);
+            } else {
+                return view('blog-details', [
+                    'judul_halaman' => $blog->judul,
+                    'blog' => $blog,
+                    'recentPosts' => Blog::latest('updated_at')->limit(3)->get(),
+                    'tes' => 'oke',
+                    'settings' => Setting::get(),
+                    'socials' => Social::get(),
+                    'newBlogs' => Blog::latest('updated_at')->get(),
+                    'sections' => Section::get()
+                ]);
+            }
+        }
     }
 }

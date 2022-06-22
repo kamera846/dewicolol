@@ -1,328 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
     <head>
-        <meta charset="utf-8" />
+        <?php 
+        $keywords = "desa, wisata, colol, desa wisata, desa colol, wisata colol, desa wisata colol, ntt, nusa tenggara timur, manggarai barat";
+        $description = "Sejarah peradaban masyarakat penghuni kampung sowang yang berlokasi Didesa Loha, Kecamatan Pacar, Kabupaten Manggarai Barat. kampung sowang diberi nama oleh leluhur “empo” yang datang dari suku nawangkarena sebelum dijadikan sebuah tempat pemukiman."; 
+        $setting = $settings[0];
+        $web_url = sprintf("%s://%s%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http', $_SERVER['SERVER_NAME'], $_SERVER['REQUEST_URI'])
+        ?>
+        <!-- title -->
         <title>{{ $judul_halaman }}</title>
-        <!-- Stylesheets -->
-        <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet" />
-        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
-        <!-- Responsive File -->
-        <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet" />
-        <!-- Color File -->
-        <link href="{{ asset('assets/css/color.css') }}" rel="stylesheet" />
-
-        <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Merriweather:ital@0;1&display=swap" rel="stylesheet" />
-
-        <!-- <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon" />
-        <link rel="icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon" /> -->
-
-        <!-- Responsive -->
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-        <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <meta name="author" content="ThemeZaa">
+        <!-- description -->
+        <meta name="description" content="{{ $description }}">
+        <!-- keywords -->
+        <meta name="keywords" content="{{ $keywords }}}">
+        <meta itemprop="name" content="{{$judul_halaman}}">
+        <meta itemprop="description" content="{{$description}}">
+        <meta itemprop="image" content="{{ asset('storage/' . $setting->logo) }}">
+        
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="{{$web_url}}">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{$judul_halaman}}">
+        <meta property="og:description" content="{{$description}}">
+        <meta property="og:image" content="{{ asset('storage/' . $setting->logo) }}">
+        
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{$judul_halaman}}">
+        <meta name="twitter:description" content="{{$description}}">
+        <meta name="twitter:image" content="{{ asset('storage/' . $setting->logo) }}">
+        <!-- favicon -->
+        @foreach ($settings as $setting)
+        @if ($setting->favicon)
+        <link rel="icon" href="{{ asset('storage/' . $setting->favicon) }}" type="image/png" />
+        @else
+        <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/png">
+        @endif
+        @endforeach
+        {{-- <link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon-57x57.png') }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/apple-touch-icon-72x72.png') }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/apple-touch-icon-114x114.png') }}"> --}}
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootsnav.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/font-icons.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/theme-vendors.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}">
     </head>
-
-    <body>
-        <div class="page-wrapper">
-            <!-- Preloader -->
-            <div class="loader-wrap">
-                <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
-                <div class="layer layer-one"><span class="overlay"></span></div>
-                <div class="layer layer-two"><span class="overlay"></span></div>
-                <div class="layer layer-three"><span class="overlay"></span></div>
-            </div>
-
-            <!-- Main Header -->
-            <header class="main-header header-style-one">
-                <!-- Header Top -->
-                <div class="header-top">
-                    <div class="auto-container">
-                        <div class="inner-container">
-                            <div class="left-column">
-                                <div class="text"><i class="icon-news"></i><a href="#">Latest City News</a> Coronavirus: Restrictions eased in parts of some islands</div>
-                            </div>
-                            <div class="right-column">
-                                <div class="phone">
-                                    <a href="tel:+18526105599"><i class="fas fa-phone-volume"></i>+1 852-610-5599</a>
-                                </div>
-                                <ul class="header-top-menu">
-                                    <li><a href="#">City Tour</a></li>
-                                    <li><a href="#">Join Us</a></li>
-                                    <li><a href="#">Get In Touch</a></li>
-                                </ul>
-                                <ul class="social-icon">
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+    <body> 
+        <!-- start header -->
+        <header>
+            <!-- start navigation -->
+            <nav class="navbar navbar-default bootsnav background-black header-dark white-link navbar-top navbar-expand-lg on no-full">
+                <div class="container-lg nav-header-container">
+                    <!-- start logo -->
+                    <div class="col-auto ps-0">
+                        <a href="/" title="Desa Wisata Colol" class="logo">
+                            {{-- <img src="{{ asset('images/logo-white.png') }}" data-at2x="{{ asset('images/logo@2x.png') }}" class="logo-dark default" alt="Pofo"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Pofo" class="logo-light"></a> --}}
+                            @foreach ($settings as $setting)
+                                        <a href="./"><img src="{{ asset('storage/' . $setting->logo) }}" alt="" style="max-height: 60px;" /></a>
+                                    {{-- <a href="/"><h1 class="text-white">Loha</h1><p class="text-white">Desa Wisata</p></a> --}}
+                                    @endforeach
                     </div>
-                </div>
-
-                <!-- Header Upper -->
-                <div class="header-upper">
-                    <div class="auto-container">
-                        <div class="inner-container">
-                            <!--Logo-->
-                            <div class="logo-box">
-                                <div class="logo">
-                                    <!-- <a href="./"><img src="{{ asset('assets/images/tes.png') }}" alt="" /></a> -->
-                                    <a href="/"><h1 class="text-white">Colol</h1><p class="text-white">Desa Wisata</p></a>
-                                </div>
-                            </div>
-                            <!--Nav Box-->
-                            <div class="nav-outer">
-                                <!--Mobile Navigation Toggler-->
-                                <div class="mobile-nav-toggler"><img src="{{ asset('assets/images/icons/icon-bar-2.png') }}" alt="" /></div>
-
-                                <!-- Main Menu -->
-                                <nav class="main-menu navbar-expand-md navbar-light">
-                                    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                        <ul class="navigation">
-                                            <li><a href="./">Beranda</a></li>
-                                            <li class="{{ ($judul_halaman === 'Tentang Kami | Desa Wisata Loha')?'current':'' }}"><a href="/about">Tentang Kami</a></li>
-                                            <li class="{{ ($judul_halaman === 'Galeri | Desa Wisata Loha')?'current':'' }}"><a href="/gallery">Galeri</a></li>
-                                            <li class="{{ ($judul_halaman === 'Blog | Desa Wisata Loha')?'current':'' }}"><a href="/blog">Blog</a></li>
-                                            <li class="{{ ($judul_halaman === 'Kontak Kami | Desa Wisata Loha')?'current':'' }}"><a href="/contact">Kontak</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                            <div class="navbar-right">
-                                <div class="search-form-two">
-                                    <form>
-                                        <input type="search" placeholder="Ketikkan sesuatu ..." />
-                                        <button type="submit"><i class="icon-search"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Header Upper-->
-
-                <!-- Sticky Header  -->
-                <div class="sticky-header">
-                    <div class="header-upper">
-                        <div class="auto-container">
-                            <div class="inner-container">
-                                <!--Logo-->
-                                <div class="logo-box">
-                                    <div class="logo">
-                                        <!-- <a href="./"><img src="{{ asset('assets/images/logo.png') }}" alt="" /></a> -->
-                                        <a href="/"><h1 class="text-white">Colol</h1><p class="text-white">Desa Wisata</p></a>
-                                    </div>
-                                </div>
-                                <!--Nav Box-->
-                                <div class="nav-outer">
-                                    <!--Mobile Navigation Toggler-->
-                                    <div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar-2.png" alt="" /></div>
-                                    <!-- Main Menu -->
-                                    <nav class="main-menu navbar-expand-md navbar-light"></nav>
-                                </div>
-                                <div class="navbar-right">
-                                    <div class="search-form-two">
-                                        <form>
-                                            <input type="search" placeholder="Ketikkan sesuatu ..." />
-                                            <button type="submit"><i class="icon-search"></i></button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Sticky Menu -->
-
-                <!-- Mobile Menu  -->
-                <div class="mobile-menu">
-                    <div class="menu-backdrop"></div>
-                    <div class="close-btn"><span class="icon far fa-times-circle"></span></div>
-
-                    <nav class="menu-box">
-                        <div class="nav-logo">
-                            <!-- <a href="./"><img src="{{ asset('assets/images/logo.png') }}" alt="" title="" /></a> -->
-                            <a href="/">Desa Wisata Loha</a>
-                        </div>
-                        <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-                        <!--Social Links-->
-                        <div class="social-links">
-                            <ul class="clearfix">
-                                <li>
-                                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <!-- end logo -->
+                    <div class="col accordion-menu pe-0 pe-md-3">
+                        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle-1">
+                            <span class="sr-only">toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-collapse collapse justify-content-end" id="navbar-collapse-toggle-1">
+                            <ul class="nav navbar-nav navbar-left no-margin alt-font text-normal">
+                                <!-- start menu item -->
+                                <li class="">
+                                    <a href="/" class="nav-link">Beranda</a>
                                 </li>
-                                <li>
-                                    <a href="#"><span class="fab fa-facebook-square"></span></a>
+                                <li class="">
+                                    <a href="/about" class="nav-link">Tentang</a>
                                 </li>
-                                <li>
-                                    <a href="#"><span class="fab fa-pinterest-p"></span></a>
+                                <li class="">
+                                    <a href="/blog" class="nav-link">Artikel</a>
                                 </li>
-                                <li>
-                                    <a href="#"><span class="fab fa-instagram"></span></a>
+                                <li class="">
+                                    <a href="/gallery" class="nav-link">Galeri</a>
                                 </li>
-                                <li>
-                                    <a href="#"><span class="fab fa-youtube"></span></a>
+                                <li class="">
+                                    <a href="/contact" class="nav-link">Kontak</a>
                                 </li>
                             </ul>
                         </div>
-                    </nav>
+                    </div>
+                    <div class="col-auto pe-0">
+                        <div class="header-social-icon d-none d-md-inline-block">
+                            @foreach ($socials as $social)
+                            @if ($social->tipe_sosmed === 'Facebook')
+                                <a href="{{ $social->link_sosmed }}" title="Facebook" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            @endif
+                            @if ($social->tipe_sosmed === 'Twitter')
+                                <a href="{{ $social->link_sosmed }}" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                            @endif
+                            @if ($social->tipe_sosmed === 'Instagram')
+                                <a href="https://instagram.com/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                            @endif
+                            @if ($social->tipe_sosmed === 'Pinterest')
+                                <a href="{{ $social->link_sosmed }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            @endif
+                            @if ($social->tipe_sosmed === 'Youtube')
+                                    <a href="{{ $social->link_sosmed }}" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a>
+                            @endif
+                            @endforeach                          
+                        </div>
+                    </div>
                 </div>
-                <!-- End Mobile Menu -->
+            </nav>
+            <!-- end navigation --> 
+        </header>
+        <!-- end header -->
 
-                <div class="nav-overlay">
-                    <div class="cursor"></div>
-                    <div class="cursor-follower"></div>
-                </div>
-            </header>
-            <!-- End Main Header -->
+        {{-- page content --}}
+        @yield('page-content')
 
-            <!--Search Popup-->
-            <div id="search-popup" class="search-popup">
-                <div class="close-search theme-btn"><span class="far fa-times-circle"></span></div>
-                <div class="popup-inner">
-                    <div class="overlay-layer"></div>
-                    <div class="search-form">
-                        <form method="post" action="index.php">
-                            <div class="form-group">
-                                <fieldset>
-                                    <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required />
-                                    <input type="submit" value="Search Now!" class="theme-btn" />
-                                </fieldset>
+        <!-- start footer --> 
+        <footer class="footer-standard-dark bg-extra-dark-gray"> 
+            <div class="footer-widget-area padding-three-tb sm-padding-40px-tb">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-3 col-md-6 widget md-margin-30px-bottom text-center text-sm-start">
+                            <!-- start logo -->
+                            <a href="/" class="margin-20px-bottom d-inline-block">
+                                @foreach ($settings as $setting)
+                                <a href="./"><img src="{{ asset('storage/' . $setting->logo) }}" class="footer-logo" alt="" style="max-height: 60px;" /></a>
+                                @endforeach
+                            <!-- end logo -->
+                            @foreach ($sections as $section)
+                                @if ($section->slug === 'about')
+                                    <p class=" d-inline-block w-95 lg-w-100 xs-w-95">{!! $section->description !!}</p>
+                                @endif
+                            @endforeach
+                            <!-- start social media -->
+                            <div class="social-icon-style-8 d-inline-block align-middle">
+                                <ul class="small-icon no-margin-bottom">
+                                    @foreach ($socials as $social)
+                                        @if ($social->tipe_sosmed === 'Facebook')
+                                            <li><a href="{{ $social->link_sosmed }}" title="Facebook" target="_blank"><i class="fab fa-facebook-f text-white-2" aria-hidden="true"></i></a></li>
+                                        @endif
+                                        @if ($social->tipe_sosmed === 'Twitter')
+                                            <li><a href="{{ $social->link_sosmed }}" title="Twitter" target="_blank"><i class="fab fa-twitter text-white-2"></i></a></li>
+                                        @endif
+                                        @if ($social->tipe_sosmed === 'Instagram')
+                                            <li><a href="https://instagram.com/" title="Instagram" target="_blank"><i class="fab fa-instagram text-white-2"></i></a>
+                                        @endif
+                                        @if ($social->tipe_sosmed === 'Pinterest')
+                                            <li><a href="{{ $social->link_sosmed }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p text-white-2"></i></a></li>
+                                        @endif
+                                        @if ($social->tipe_sosmed === 'Youtube')
+                                                <li></li><a href="{{ $social->link_sosmed }}" target="_blank" title="Youtube"><i class="fab fa-youtube text-white-2"></i></a>
+                                        @endif
+                                    @endforeach
+                                </ul>
                             </div>
-                        </form>
+                            <!-- end social media -->
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <!-- start additional links -->
+                        <div class="col-lg-3 col-md-6 widget padding-45px-left md-padding-15px-left md-margin-30px-bottom text-center text-sm-start">
+                            <div class="widget-title alt-font  text-medium-gray text-uppercase margin-10px-bottom font-weight-600">Halaman</div>
+                            <ul class="list-unstyled">
+                                <li><a href="/">Beranda</a></li>
+                                <li><a href="/about">Tentang</a></li>
+                                <li><a href="/blog">Artikel</a></li>
+                                <li><a href="/gallery">Galeri</a></li>
+                                <li><a href="/contact">Kontak</a></li>
+                            </ul>
+                        </div>
+                        <!-- end additional links -->
+                        <!-- start contact information -->
+                        <div class="col-lg-4 col-md-6 widget widget md-margin-30px-bottom padding-45px-left md-padding-15px-left xs-margin-30px-bottom text-center text-sm-start">
+                            <div class="widget-title alt-font  text-medium-gray text-uppercase margin-10px-bottom font-weight-600">Info Kontak</div>
+                            @foreach ($settings as $setting)
+                                <div class="">Email: <a href="mailto:{{ $setting->email }}">{{ $setting->email }}</a></div>
+                                <div class="margin-15px-bottom">Telepon: {{ $setting->telpon }}</div>
+                                <p class="d-block w-80 sm-w-100 margin-0px-bottom">{{ $setting->lokasi }}</b></p>    
+                            @endforeach
+                        <!-- end contact information -->
                     </div>
                 </div>
             </div>
-
-            {{-- page content --}}
-            @yield('page-content')
-
-            <!-- Main  Footer -->
-            <footer class="main-footer">
-                <div class="auto-container">
-                    <!--Widgets Section-->
-                    <div class="widgets-section">
-                        <div class="row clearfix">
-                            <!--Column-->
-                            <div class="column col-lg-4 col-md-6">
-                                <div class="widget about-widget">
-                                    <h3 class="widget-title">Tentang Kami</h3>
-                                    <div class="text">Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
-                                    <ul class="social-links">
-                                        <li>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fab fa-youtube"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!--Column-->
-                            <div class="column col-lg-4 col-md-6">
-                                <div class="widget links-widget">
-                                    <h3 class="widget-title">Navigasi</h3>
-                                    <div class="widget-content">
-                                        <ul>
-                                            <li><a href="index.php">Beranda</a></li>
-                                            <li><a href="about.php">Tentang Kami</a></li>
-                                            <li><a href="gallery.php">Galeri</a></li>
-                                            <li><a href="blog.php">Blog</a></li>
-                                            <li><a href="contact.php">Kontak</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Column-->
-                            <div class="column col-lg-4 col-md-6">
-                                <div class="widget contact-widget">
-                                    <h3 class="widget-title">Kontak Kami</h3>
-                                    <div class="widget-content">
-                                        <ul class="contact-info">
-                                            <li>
-                                                <div class="icon"><img src="assets/images/icons/icon-1.png" alt="" /></div>
-                                                <div class="text">
-                                                    <strong>Lokasi</strong> Desa Colol, Kecamatan Lamba Leda Timur <br />
-                                                    Kabupaten Manggrai Timur
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon"><img src="assets/images/icons/icon-2.png" alt="" /></div>
-                                                <div class="text">
-                                                    <strong>Telepon</strong>
-                                                    <a href="tel:+62 823 3976 5401">+62 823 3976 5401</a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon"><img src="assets/images/icons/icon-3.png" alt="" /></div>
-                                                <div class="text">
-                                                    <strong>Email</strong>
-                                                    <a href="mailto:munciple@example.net">munciple@example.net</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="container margin-20px-top">
+                <div class="border-color-medium-dark-gray border-top padding-40px-top">
+                    <div class="row"> 
+                        <!-- start copyright -->
+                        <div class="text-center">© {{ date('Y') }} Colol - Powered by <a href="https://jongkreatif.id" target="_blank" class="text-dark-gray">JongKreatif</a>.</div>
+                        <!-- end copyright -->
                     </div>
                 </div>
-                <!-- Footer Bottom -->
-                <div class="footer-bottom">
-                    <div class="auto-container">
-                        <div class="wrapper-box">
-                            <div class="copyright">
-                                <div class="text">© 1995-2020 <a href="#">GOVERNLIA</a> - The City Govt All rights reserved.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <!--End pagewrapper-->
-
-        <!--Scroll to top-->
-        <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon-arrow"></span></div>
-
-        <script src="{{ asset('assets/js/jquery.js') }}"></script>
-        <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('assets/js/bootstrap-select.min.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
-        <script src="{{ asset('assets/js/isotope.js') }}"></script>
-        <script src="{{ asset('assets/js/owl.js') }}"></script>
-        <script src="{{ asset('assets/js/appear.js') }}"></script>
-        <script src="{{ asset('assets/js/wow.js') }}"></script>
-        <script src="{{ asset('assets/js/lazyload.js') }}"></script>
-        <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
-        <script src="{{ asset('assets/js/TweenMax.min.js') }}"></script>
-        <script src="{{ asset('assets/js/swiper.min.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.polyglot.language.switcher') }}.js"></script>
-        <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js') }}"></script>
-        <script src="{{ asset('assets/js/parallax-scroll.js') }}"></script>
-
-        <script src="{{ asset('assets/js/script.js') }}"></script>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- start scroll to top -->
+        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+        <!-- end scroll to top  -->
+        <!-- javascript -->
+        <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/bootsnav.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.nav.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/hamburger-menu.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/theme-vendors.min.js') }}"></script>
+        <!-- setting -->
+        <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     </body>
 </html>

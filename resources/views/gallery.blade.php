@@ -1,228 +1,139 @@
 @extends('layouts.main')
 
 @section('page-content')
-    <section class="page-title" style="background-image: url(assets/images/background/bg-9.jpg)">
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="content-wrapper">
-                    <div class="title">
-                        <h1>Galeri.</h1>
-                    </div>
-                    <ul class="bread-crumb">
-                        <li><a href="./">Beranda</a></li>
-                        <li>Galeri</li>
-                    </ul>
-                </div>
+    
+<!-- start page title section -->
+<section class="wow animate__fadeIn parallax" data-parallax-background-ratio="0.5" style="background-image:url('https://via.placeholder.com/1920x1100');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container position-relative">
+        <div class="row align-items-center">
+            <div class="col-12 d-flex flex-column justify-content-center text-center extra-small-screen page-title-large">
+                <!-- start page title -->
+                <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom">Galeri Kami</h1>
+                <!-- end page title --> 
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- end page title section --> 
 
-    <!-- News section Three -->
-    <section class="news-section-three">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-6 news-block">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="assets/images/resource/news-1.jpg" alt=""/>
-                            <div class="overlay">
-                                <div class="link-btn">
-                                    <a href="assets/images/resource/news-1.jpg"><i class="icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>
-                                <a href="blog-details.php"
-                                    >Assistance For Homes And <br />
-                                    Properties Real Estate</a
-                                >
-                            </h4>
-                            <div class="text">Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip...</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-block">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="assets/images/resource/news-2.jpg" alt="" />
-                            <div class="overlay">
-                                <div class="link-btn">
-                                    <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>
-                                <a href="blog-details.php"
-                                    >Long-Term Vision Of Health <br />
-                                    & Attractive Facility</a
-                                >
-                            </h4>
-                            <div class="text">Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip...</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-block">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="assets/images/resource/news-3.jpg" alt="" />
-                            <div class="overlay">
-                                <div class="link-btn">
-                                    <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>
-                                <a href="blog-details.php"
-                                    >Recreation Programs From <br />
-                                    Watery Landscapes</a
-                                >
-                            </h4>
-                            <div class="text">Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip...</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-block">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="assets/images/resource/news-9.jpg" alt="" />
-                            <div class="overlay">
-                                <div class="link-btn">
-                                    <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>
-                                <a href="blog-details.php"
-                                    >Assistance For Homes And <br />
-                                    Properties Real Estate</a
-                                >
-                            </h4>
-                            <div class="text">Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip...</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-block">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="assets/images/resource/news-10.jpg" alt="" />
-                            <div class="overlay">
-                                <div class="link-btn">
-                                    <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>
-                                <a href="blog-details.php"
-                                    >Long-Term Vision Of Health <br />
-                                    & Attractive Facility</a
-                                >
-                            </h4>
-                            <div class="text">Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip...</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-block">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="assets/images/resource/news-11.jpg" alt="" />
-                            <div class="overlay">
-                                <div class="link-btn">
-                                    <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>
-                                <a href="blog-details.php"
-                                    >Recreation Programs From <br />
-                                    Watery Landscapes</a
-                                >
-                            </h4>
-                            <div class="text">Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip...</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-block">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="assets/images/resource/news-12.jpg" alt="" />
-                            <div class="overlay">
-                                <div class="link-btn">
-                                    <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>
-                                <a href="blog-details.php"
-                                    >Assistance For Homes And <br />
-                                    Properties Real Estate</a
-                                >
-                            </h4>
-                            <div class="text">Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip...</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-block">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="assets/images/resource/news-13.jpg" alt="" />
-                            <div class="overlay">
-                                <div class="link-btn">
-                                    <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>
-                                <a href="blog-details.php"
-                                    >Long-Term Vision Of Health <br />
-                                    & Attractive Facility</a
-                                >
-                            </h4>
-                            <div class="text">Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip...</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-block">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="assets/images/resource/news-14.jpg" alt="" />
-                            <div class="overlay">
-                                <div class="link-btn">
-                                    <a href="blog-details.php"><i class="icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>
-                                <a href="blog-details.php"
-                                    >Recreation Programs From <br />
-                                    Watery Landscapes</a
-                                >
-                            </h4>
-                            <div class="text">Dolore magna aliquat minim veniay quis nos exercitation ullamco laboris aliquip...</div>
-                        </div>
-                    </div>
+<!-- start gallry content section -->
+<section class="wow animate__fadeIn">
+    <div class="container">
+        <div class="row justify-content-center wow animate__fadeInUp">
+            <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
+                <div class="position-relative overflow-hidden w-100">
+                    <span class="text-small text-outside-line-full alt-font font-weight-600 text-uppercase">Momen yang berhasil kami abadikan</span>
                 </div>
             </div>
-            <!-- Post Pagination -->
-            <ul class="post-pagination mt-5 mb-30">
-                <li class="prev-page">
-                    <a href="#"><i class="icon-arrow"></i></a>
-                </li>
-                <li class="current"><span> 1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li class="next-page">
-                    <a href="#"><i class="icon-arrow"></i></a>
-                </li>
-            </ul>
         </div>
-    </section>
+        <div class="row wow animate__fadeInUp">
+            <div class="col-12 filter-content overflow-hidden">
+                <ul class="hover-option2 portfolio-gallery portfolio-wrapper grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-medium" style="position: relative; height: 227.75px;">
+                    <li class="grid-sizer"></li>
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
+                                </div>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end image gallery item -->
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
+                                </div>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end image gallery item -->
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
+                                </div>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end image gallery item -->
+                    <!-- start image gallery item -->
+                    <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
+                        <a href="https://via.placeholder.com/900x650" title="Isi deskrisi gallery..." data-group="three-columns-zoom-animation" class="lightbox-group-gallery-item">
+                            <figure>
+                                <div class="portfolio-img bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/900x650" alt="" class="project-img-gallery" data-no-retina="">
+                                </div>
+                                <h6 class="text-small font-weight-500 text-extra-dark-gray mt-3 text-center">Judul Galeri Lorem Ipsum</h6>
+                                <figcaption>
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <i class="ti-zoom-in text-white-2 fa-2x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end image gallery item -->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- start pagination -->
+        <div class=" text-center margin-100px-top md-margin-50px-top wow animate__fadeInUp">
+            <div class="pagination text-small text-uppercase text-extra-dark-gray">
+                <ul class="mx-auto">
+                    <li><a href="#"><i class="fas fa-long-arrow-alt-left margin-5px-right d-none d-md-inline-block"></i> Prev</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">Next <i class="fas fa-long-arrow-alt-right margin-5px-left d-none d-md-inline-block"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end pagination -->
+    </div>
+</section>
+<!-- end galleery content section -->
+
 @endsection

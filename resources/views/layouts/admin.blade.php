@@ -8,7 +8,14 @@
         <meta name="author" content="Creative Tim" />
         <title>{{ $judul_halaman }}</title>
         <!-- Favicon -->
+        @foreach ($settings as $setting)
+        @if ($setting->favicon)
+        <link rel="icon" href="{{ asset('storage/' . $setting->favicon) }}" type="image/png" />
+        @else
         <link rel="icon" href="{{ asset('admin/assets/img/brand/favicon.png') }}" type="image/png" />
+        @endif
+        @endforeach
+        {{-- <link rel="icon" href="{{ asset('admin/assets/img/brand/blue.png') }}" type="image/png" /> --}}
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
         <!-- Icons -->
@@ -18,6 +25,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- Argon CSS -->
         <link rel="stylesheet" href="{{ asset('admin/assets/css/argon.css?v=1.1.0') }}" type="text/css" />
+        {{-- <link rel="stylesheet" href="{{ asset('/mycss.css') }}"> --}}
     </head>
 
     <body>
@@ -26,8 +34,14 @@
             <div class="scrollbar-inner">
                 <!-- Brand -->
                 <div class="sidenav-header d-flex align-items-center">
-                    <a class="navbar-brand" href="/dashboard">
-                        <img src="{{ asset('admin/assets/img/brand/blue.png') }}" class="navbar-brand-img" alt="..." />
+                    <a class="navbar-brand" href="/">
+                        @foreach($settings as $setting)
+                            @if($setting->logo)
+                            <img src="{{ asset('storage/'. $setting->logo) }}" class="navbar-brand-img" alt="..." style="min-height: 60px; object-fit: contain;"/>
+                            @else
+                            <img src="{{ asset('admin/assets/img/brand/blue.png') }}" class="navbar-brand-img" alt="..." />
+                            @endif   
+                        @endforeach
                     </a>
                     <div class="ml-auto">
                         <!-- Sidenav toggler -->
@@ -51,37 +65,24 @@
                                     <span class="nav-link-text">Dashboard</span>
                                 </a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#navbar-maps" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-maps">
-                                    <i class="ni ni-map-big text-primary"></i>
-                                    <span class="nav-link-text">Maps</span>
-                                </a>
-                                <div class="collapse" id="navbar-maps">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="./pages/maps/google.html" class="nav-link">Google</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="./pages/maps/vector.html" class="nav-link">Vector</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li> -->
                         </ul>
 
                         <!-- Divider -->
                         <hr class="my-3">
-
                         <h6 class="navbar-heading p-0 text-primary">DATA</h6>
                         <ul class="navbar-nav mb-md-3">
-                            <li class="nav-item">
-                                <a 
-                                class="nav-link {{ ( $judul_halaman === 'Admin | Data Pengguna' || $judul_halaman === 'Admin | Edit Pengguna' || $judul_halaman === 'Admin | Tambah Pengguna' || $judul_halaman === 'Admin | Detail Pengguna' ) ? 'active' : '' }}" 
-                                href="/dashboard/user">
-                                    <i class="ni ni-circle-08 text-green"></i>
-                                    <span class="nav-link-text">Pengguna</span>
-                                </a>
-                            </li>
+
+                            @if( Auth::user()->role === 'super-admin' )
+                                <li class="nav-item">
+                                    <a 
+                                    class="nav-link {{ ( $judul_halaman === 'Admin | Data Pengguna' || $judul_halaman === 'Admin | Edit Pengguna' || $judul_halaman === 'Admin | Tambah Pengguna' || $judul_halaman === 'Admin | Detail Pengguna' ) ? 'active' : '' }}" 
+                                    href="/dashboard/user">
+                                        <i class="ni ni-circle-08 text-green"></i>
+                                        <span class="nav-link-text">Pengguna</span>
+                                    </a>
+                                </li>
+                                
+                                @endif
                             <li class="nav-item">
                                 <a 
                                 class="nav-link {{ ( $judul_halaman === 'Admin | Data Postingan' || $judul_halaman === 'Admin | Edit Postingan' || $judul_halaman === 'Admin | Tambah Postingan' || $judul_halaman === 'Admin | Detail Postingan' ) ? 'active' : '' }}" 
@@ -99,19 +100,28 @@
                                     <span class="nav-link-text">Galeri</span>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a 
+                                class="
+                                    nav-link {{ ( $judul_halaman === 'Admin | Data Menu' || $judul_halaman === 'Admin | Edit Menu' || $judul_halaman === 'Admin | Tambah Menu' ) ? 'active' : '' }}" 
+                                href="/dashboard/section">
+                                    <i class="ni ni-single-copy-04 default"></i>
+                                    <span class="nav-link-text">Section</span>
+                                </a>
+                            </li>
                         </ul>
 
                         <!-- Divider -->
-                        {{-- <hr class="my-3">
+                        <hr class="my-3">
 
                         <h6 class="navbar-heading p-0 text-primary">PROFIL</h6>
                         <ul class="navbar-nav mb-md-3">
                             <li class="nav-item">
                                 <a 
-                                class="nav-link {{ ( $judul_halaman === 'Admin | Profil Kontak') ? 'active' : '' }}" 
-                                href="/dashboard/contact">
+                                class="nav-link {{ ( $judul_halaman === 'Admin | Profil Setting') ? 'active' : '' }}" 
+                                href="/dashboard/setting">
                                     <i class="ni ni-email-83 text-red"></i>
-                                    <span class="nav-link-text">Kontak</span>
+                                    <span class="nav-link-text">Setting</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -122,7 +132,7 @@
                                     <span class="nav-link-text">Sosial Media</span>
                                 </a>
                             </li>
-                        </ul> --}}
+                        </ul>
 
                         <!-- Divider -->
                         <hr class="my-3">
@@ -137,13 +147,6 @@
                                         <span class="nav-link-text ml-2">Keluar</span>
                                     </button>
                                 </form>
-                                {{-- <a 
-                                id="logout"
-                                class="nav-link" 
-                                href="/logout">
-                                    <i class="ni ni-button-power text-red"></i>
-                                    <span class="nav-link-text">Keluar</span>
-                                </a> --}}
                             </li>
                         </ul>
                         <!-- <hr class="my-3" /> -->
@@ -158,7 +161,7 @@
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Navbar links -->
-                        <ul class="navbar-nav align-items-center ml-md-auto">
+                        <ul class="navbar-nav align-items-center">
                             <li class="nav-item d-xl-none">
                                 <!-- Sidenav toggler -->
                                 <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
@@ -170,20 +173,23 @@
                                 </div>
                             </li>
                         </ul>
+                        <ul class="navbar-nav align-items-center mr-md-auto">
+                            <h1 class="text-white mb-0">Selamat Datang di Halaman Dashboard!</h1>
+                        </ul>
                         <ul class="navbar-nav align-items-center ml-auto ml-md-0">
                             <li class="nav-item dropdown">
                                 @auth
                                     <a class="nav-link pr-0" href="#"data-toggle="modal" data-target="#profil-saya">
                                         <div class="media align-items-center">
                                             <div class="media-body mr-2 d-none d-lg-block">
-                                                <span class="mb-0 text-sm font-weight-bold">{{ Auth::user()->nama }}</span>
+                                                <span class="mb-0 text-sm font-weight-bold">{{ ucwords(Auth::user()->nama) }}</span>
                                             </div>
                                             @if (Auth::user()->foto_profil != null)
                                                 <span class="avatar avatar-sm rounded-circle">
-                                                    <img alt="Image placeholder" src="{{ asset('storage/' . Auth::user()->foto_profil)}}" />
+                                                    <img alt="Image placeholder" style="width: 100%;height:100%;object-fit:cover;" src="{{ asset('storage/' . Auth::user()->foto_profil)}}" />
                                                 </span>
                                             @else
-                                                <img src="/storage/foto-profil/defaultuserimage.png" class="avatar rounded-circle mr-3">
+                                                <img src="{{ asset('/assets/images/download.jpeg') }}" class="avatar rounded-circle mr-3">
                                             @endif
                                         </div>
                                     </a>
@@ -214,9 +220,9 @@
                     </div>
                     <div class="modal-body text-sm">
                         @if (Auth::user()->foto_profil != null)
-                            <img src="{{ asset('storage/' . Auth::user()->foto_profil)}}" alt="" class="rounded d-block mx-auto mb-4" width="150ox" height="150px">
+                            <img src="{{ asset('storage/' . Auth::user()->foto_profil) }}" alt="" class="rounded d-block mx-auto mb-4" width="150px" height="150px">
                         @else
-                            <img src="/storage/foto-profil/defaultuserimage.png" alt="" class="rounded d-block mx-auto mb-4" width="150ox" height="150px">
+                            <img src="{{ asset('/storage/foto-profil/defaultuserimage.png') }}" alt="" class="rounded d-block mx-auto mb-4" width="150px" height="150px">
                         @endif
                         <div class="row mb-3">
                             <div class="col-4">Nama</div>
@@ -246,8 +252,10 @@
                 </div>
             </div>
         </div>
+
         {{-- boostrap js --}}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
         <!-- Argon Scripts -->
         <!-- Core -->
         <script src="{{ asset('admin/assets/vendor/jquery/dist/jquery.min.js') }}"></script>
@@ -273,3 +281,4 @@
 
     </body>
 </html>
+

@@ -7,7 +7,13 @@
         <meta name="author" content="Creative Tim" />
         <title>{{ $judul_halaman }}</title>
         <!-- Favicon -->
-        <link rel="icon" href="{{ asset('admin/assets/img/brand/favicon.png') }}" type="image/png" />
+        @foreach ($settings as $setting)
+        @if ($setting->favicon)
+        <img src="{{ asset('storage' . $setting->favicon) }}" alt="">
+        @else
+        <link rel="icon" href="{{ asset('admin/assets/img/brand/blue.png') }}" type="image/png" />
+        @endif
+        @endforeach
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
         <!-- Icons -->
@@ -25,27 +31,9 @@
 
         {{-- Footer --}}
         <footer class="py-5" id="footer-main">
-            <div class="container">
-                <div class="row align-items-center justify-content-xl-between">
-                    <div class="col-xl-6">
-                        <div class="copyright text-center text-xl-left text-muted">&copy; 2019 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a></div>
-                    </div>
-                    <div class="col-xl-6">
-                        <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-                            <li class="nav-item">
-                                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://www.creative-tim.com/license" class="nav-link" target="_blank">License</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                    <div class="copyright text-center text-muted">&copy; 2022 <a href="/" class="font-weight-bold ml-1">COLOL</a> - Powered by <a href="https://jongkreatif.id/" target="_blank" class="font-weight-bold ml-1">Jongkreatif</a>.</div>
                 </div>
             </div>
         </footer>
@@ -76,7 +64,6 @@
 
             if (flashData === "gagal") {
                 Swal.fire("Gagal", "Email / kata sandi salah!", "error");
-            } else if (flashData === "password") {
             }
 
         </script>

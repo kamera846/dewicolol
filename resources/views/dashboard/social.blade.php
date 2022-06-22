@@ -9,8 +9,8 @@
                         <h6 class="h2 text-white d-inline-block mb-0">Sosial Media</h6>
                         <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                             <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                                <li class="breadcrumb-item"><a href="/dashboard"><i class="fas fa-home"></i></a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Profil Sosial Media</li>
+                                <li class="breadcrumb-item"><a hrefdashboarddashboard"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Data Sosial Media</li>
                             </ol>
                         </nav>
                     </div>
@@ -23,59 +23,61 @@
 @section('page-content')
     <div class="container-fluid mt--6">
         <div class="row">
-            <div class="col-lg-8 col-md-10">
+            <div class="col">
                 <div class="card">
                     <!-- Card header -->
-                    <div class="card-header">
-                        <h3 class="mb-0">Profil Sosial Media</h3>
-                    </div>
-                    {{-- alerts --}}
-                    {{-- isi atribut flashdata sesuai kondisi session untuk menampilan alert berhasil mengubah data, kalo flashdata gagal isi 'gagal' untuk menampilakan alert error, kalo kosong alertnya nggak muuncul--}}
-                    <div class="flash-data" data-flashdata=""></div>
-                    <!-- Card Body -->
-                    <div class="card-body">
+                    <div class="card-header border-0">
                         <div class="row">
-                            <div class="col">
-                                <form>
-                                    <div class="form-group row">
-                                        <label for="twitter" class="col-md-3 col-form-label form-control-label">Link Twitter</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control form-control-alternative" type="text" id="twitter" name="twitter" value="https://twitter.com/desakeren" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="facebook" class="col-md-3 col-form-label form-control-label">Link Facebook</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control form-control-alternative" type="text" id="facebook" name="facebook" value="https://facebook.com/desakeren" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="instagram" class="col-md-3 col-form-label form-control-label">Link Instagram</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control form-control-alternative" type="text" id="instagram" name="instagram" value="https://instagram.com/desakeren" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="youtube" class="col-md-3 col-form-label form-control-label">Link Youtube</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control form-control-alternative" type="text" id="youtube" name="youtube" value="https://youtube.com/desakeren" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="pinterest" class="col-md-3 col-form-label form-control-label">Link Pinterest</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control form-control-alternative" type="text" id="pinterest" name="pinterest" value="https://pinterest.com/desakeren" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-md-3"></div>
-                                        <div class="col-md-9" id="pembungkus">
-                                            <button type="button" class="btn btn-primary" id="edit">Edit</button>
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="col-6">
+                                <h3 class="mb-0">Data Sosial Media</h3>
+                            </div>
+                            <div class="col-6 text-right">
+                                <a href="/dashboard/social/create" class="btn btn-sm btn-primary">
+                                    <span class="btn-inner--icon"><i class="fas fa-user-plus"></i></span>
+                                    <span class="btn-inner--text">Tambah Data</span>
+                                </a>
                             </div>
                         </div>
+                    </div>
+
+                    {{-- isi atribut flashdata sesuai kondisi session untuk menampilan alert berhasil manipulasi(menambahkan, mengubah, menghapus) data, kalo flashdata gagal isi 'gagal' untuk menampilakan alert error --}}
+                    <div class="flash-data" data-flashdata="{{ (session()->has('success'))?session('success'):'' }}{{ (session()->has('error'))?session('error'):'' }}"></div>
+
+
+                    <div class="table-responsive">
+                        <table class="table align-items-center table-flush table-hover">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Tipe sosial media</th>
+                                    <th>link</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($socials as $sosmed)
+                                <tr>
+                                    <td>
+                                        <b>{{ $sosmed->tipe_sosmed }}</b>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-bold">{{ $sosmed->link_sosmed }}</span>
+                                    </td>
+                                    <td class="table-actions">
+                                        <a href="/dashboard/social/{{ $sosmed->id }}/edit" class="table-action" data-toggle="tooltip" data-original-title="Edit pengguna">
+                                            <i class="fas fa-user-edit"></i>
+                                        </a>
+                                        <form action="/dashboard/social/{{ $sosmed->id }}/delete" method="post" class="p-0 m-0 d-inline" id="form">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" id="hapus" class="table-action table-action-delete border-0 p-0 m-0" data-toggle="tooltip" data-original-title="Hapus pengguna" style="background:none;">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

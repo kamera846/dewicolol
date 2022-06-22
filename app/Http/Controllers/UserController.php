@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Setting;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
@@ -11,18 +12,34 @@ use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
+    public function upload($fotoProfil) {
+        $uid = uniqid().".".$fotoProfil->getClientOriginalExtension();
+        $fotoProfil->move(public_path('storage'), $uid);
+        return $uid;
+    }
+
     public function index()
     {
-        return view('dashboard.user', [
-            'judul_halaman' => 'Admin | Data Pengguna',
-            'users' => User::latest()->get()
-        ]);
+        if (Auth::user()->role === 'super-admin') {
+            return view('dashboard.user', [
+                'judul_halaman' => 'Admin | Data Pengguna',
+                'users' => User::latest('updated_at')->get(),
+                'settings' => Setting::get()
+            ]);
+        } else {
+            return redirect('/dashboard');
+        }
     }
     public function create()
     {
-        return view('dashboard.add-user', [
-            'judul_halaman' => 'Admin | Tambah Pengguna'
-        ]);
+        if (Auth::user()->role === 'super-admin') {
+            return view('dashboard.add-user', [
+                'judul_halaman' => 'Admin | Tambah Pengguna',
+                'settings' => Setting::get()
+            ]);
+        } else {
+            return redirect('/dashboard');
+        }
     }
     public function store(Request $request)
     {
@@ -35,9 +52,23 @@ class UserController extends Controller
         ]);
 
         if ($request->file('foto_profil')) {
-            $fotoProfil = $request->file('foto_profil')->store('foto-profil');
+            // $fotoProfil = $request->file('foto_profil')->store('foto-profil');
+            // $fotoProfil = $request->file('foto_profil');
+            // $uid = uniqid().".".$fotoProfil->getClientOriginalExtension();
+            // $fotoProfil->move(public_path('storage/foto-profil'), $uid);
+
             User::create([
-                'foto_profil' => $fotoProfil,
+                'foto_profil' => $this->upload($request->file('foto_profil')),
+                'nama' => $request->nama,
+                'email' => $request->email,
+                'password' => hash::make($request->password),
+                'alamat' => $request->alamat,
+                'pekerjaan' => $request->pekerjaan,
+                'no_hp' => $request->no_hp,
+                'role' => $request->role,
+            ]);
+        } else {
+            User::create([
                 'nama' => $request->nama,
                 'email' => $request->email,
                 'password' => hash::make($request->password),
@@ -47,33 +78,35 @@ class UserController extends Controller
                 'role' => $request->role,
             ]);
         }
-        User::create([
-            'nama' => $request->nama,
-            'email' => $request->email,
-            'password' => hash::make($request->password),
-            'alamat' => $request->alamat,
-            'pekerjaan' => $request->pekerjaan,
-            'no_hp' => $request->no_hp,
-            'role' => $request->role,
-        ]);
+
         return redirect('/dashboard/user')->with('success', 'menambahkan');
     }
 
 
     public function show(User $user)
     {
-        return view('dashboard.detail-user', [
-            'judul_halaman' => 'Admin | Detail Pengguna',
-            'user' => $user
-        ]);
+        if (Auth::user()->role === 'super-admin') {
+            return view('dashboard.detail-user', [
+                'judul_halaman' => 'Admin | Detail Pengguna',
+                'user' => $user,
+                'settings' => Setting::get()
+            ]);
+        } else {
+            return redirect('/dashboard');
+        }
     }
 
     public function edit(User $user)
     {
-        return view('dashboard.edit-user', [
-            'judul_halaman' => 'Admin | Edit Pengguna',
-            'user' => $user
-        ]);
+        if (Auth::user()->role === 'super-admin') {
+            return view('dashboard.edit-user', [
+                'judul_halaman' => 'Admin | Edit Pengguna',
+                'user' => $user,
+                'settings' => Setting::get()
+            ]);
+        } else {
+            return redirect('/dashboard');
+        }
     }
     public function update(Request $request, User $user)
     {
@@ -81,18 +114,20 @@ class UserController extends Controller
             'foto_profil' => 'image|file',
             'nama' => 'required',
             'email' => 'required|email',
-            'alamat' => 'required'
+            'alamat' => 'required',
         ]);
+
+        $cekPassword = preg_replace('/\s+/', '', $request->password);
 
         if ($request->file('foto_profil')) {
             if ($request->oldImage != null) {
                 Storage::delete($request->oldImage);
             }
-            $fotoProfile = $request->file('foto_profil')->store('foto-profil');
+            // $fotoProfile = $request->file('foto_profil')->store('foto-profil');
 
             User::where('id', $user->id)
                 ->update([
-                    'foto_profil' => $fotoProfile,
+                    'foto_profil' => $this->upload($request->file('foto_profil')),
                     'nama' => $request->nama,
                     'email' => $request->email,
                     'alamat' => $request->alamat,
@@ -100,8 +135,8 @@ class UserController extends Controller
                     'no_hp' => $request->no_hp,
                     'role' => $request->role,
                 ]);
-        }
-        User::where('id', $user->id)
+        } else {
+            User::where('id', $user->id)
             ->update([
                 'nama' => $request->nama,
                 'email' => $request->email,
@@ -110,6 +145,14 @@ class UserController extends Controller
                 'no_hp' => $request->no_hp,
                 'role' => $request->role,
             ]);
+        }
+
+        if($cekPassword != null || $cekPassword != "") {
+            User::where('id', $user->id)
+            ->update([
+                'password' => hash::make($request->password),
+            ]);
+        }
 
         return redirect('/dashboard/user')->with('success', 'mengubah');
     }
@@ -117,6 +160,7 @@ class UserController extends Controller
     {
         return view('dashboard.edit-profile', [
             'judul_halaman' => 'Admin | Edit Profil',
+            'settings' => Setting::get()
         ]);
     }
 
@@ -126,17 +170,32 @@ class UserController extends Controller
             'foto_profil' => 'image|file',
             'nama' => 'required',
             'email' => 'required|email',
-            'alamat' => 'required'
+            'alamat' => 'required',
         ]);
 
         if ($request->file('foto_profil')) {
             if ($request->gambarLama) {
                 Storage::delete($request->gambarLama);
             }
-            $fotoProfil = $request->file('foto_profil')->store('foto-profil');
+
+            // $fotoProfil = $request->file('foto_profil')->store('foto-profil');
+
+            // $fotoProfil = $request->file('foto_profil');
+            // $uid = uniqid().".".$fotoProfil->getClientOriginalExtension();
+            // $fotoProfil->move(public_path('storage/foto-profil'), $uid);
+            
             User::where('id', Auth::user()->id)
                 ->update([
-                    'foto_profil' => $fotoProfil,
+                    'foto_profil' => $this->upload($request->file('foto_profil')),
+                    'nama' => $request->nama,
+                    'email' => $request->email,
+                    'alamat' => $request->alamat,
+                    'pekerjaan' => $request->pekerjaan,
+                    'no_hp' => $request->no_hp,
+                ]);
+        } else {
+            User::where('id', Auth::user()->id)
+                ->update([
                     'nama' => $request->nama,
                     'email' => $request->email,
                     'alamat' => $request->alamat,
@@ -144,14 +203,15 @@ class UserController extends Controller
                     'no_hp' => $request->no_hp,
                 ]);
         }
-        User::where('id', Auth::user()->id)
+
+        $cekPassword = preg_replace('/\s+/', '', $request->password);
+
+        if($cekPassword != null || $cekPassword != "") {
+            User::where('id', Auth::user()->id)
             ->update([
-                'nama' => $request->nama,
-                'email' => $request->email,
-                'alamat' => $request->alamat,
-                'pekerjaan' => $request->pekerjaan,
-                'no_hp' => $request->no_hp,
+                'password' => hash::make($request->password),
             ]);
+        }
 
         return redirect('/dashboard')->with('success', 'memperbarui');
     }
@@ -159,10 +219,14 @@ class UserController extends Controller
 
     public function destroy(User $user)
     {
-        if ($user->foto_profil) {
-            Storage::delete($user->foto_profil);
+        if (Auth::user()->role === 'super-admin') {
+            if ($user->foto_profil) {
+                Storage::delete($user->foto_profil);
+            }
+            User::destroy($user->id);
+            return redirect('/dashboard/user')->with('success', 'menghapus');
+        } else {
+            return redirect('/dashboard');
         }
-        User::destroy($user->id);
-        return redirect('/dashboard/user')->with('success', 'menghapus');
     }
 }
