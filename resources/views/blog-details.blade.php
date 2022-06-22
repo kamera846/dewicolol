@@ -43,9 +43,6 @@
                             <span class="text-extra-dark-gray font-weight-500 margin-15px-bottom d-block text-medium">You can never quit. Winners never quit, and quitters never win</span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the lorem ipsum generators on the internet tend to repeat predefined chunks as necessary, making this the first true generator on the internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
                         </div>
-                        <div class="row">
-                            <div class="fb-comments" data-href="https://www.facebook.com/Tsaimeta50/#configurator" data-width="100%" data-numposts="1"></div>
-                        </div>
                     </main>
                     <aside class="col-12 col-xl-3 col-lg-4 col-md-7">
                         <div class="d-inline-block w-100 margin-45px-bottom sm-margin-25px-bottom">
