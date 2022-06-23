@@ -1,4 +1,3 @@
-
  <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +14,6 @@
         <link rel="icon" href="{{ asset('admin/assets/img/brand/favicon.png') }}" type="image/png" />
         @endif
         @endforeach
-        {{-- <link rel="icon" href="{{ asset('admin/assets/img/brand/blue.png') }}" type="image/png" /> --}}
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
         <!-- Icons -->
@@ -25,7 +23,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- Argon CSS -->
         <link rel="stylesheet" href="{{ asset('admin/assets/css/argon.css?v=1.1.0') }}" type="text/css" />
-        {{-- <link rel="stylesheet" href="{{ asset('/mycss.css') }}"> --}}
+        <link rel="stylesheet" href="{{ asset('/mycss.css') }}">
     </head>
 
     <body>
