@@ -23,7 +23,7 @@ class MainController extends Controller
             'blogs' => Blog::latest('updated_at')->limit(3)->get(),
             'newBlogs' => Blog::latest('updated_at')->get(),
             'jumlah_blog' => Blog::count(),
-            'galleries' => Gallery::latest('updated_at')->limit(4)->get(),
+            'galleries' => Gallery::latest('updated_at')->limit(3)->get(),
             'jumlah_galeri' => Gallery::count(),
             'settings' => Setting::get(),
             'socials' => Social::get(),

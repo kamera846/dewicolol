@@ -125,7 +125,9 @@
         {{-- page content --}}
         @yield('page-content')
 
-        <!-- start footer --> 
+        <!-- start footer -->
+        @foreach ($sections as $section)
+        @if($section->slug === 'footer') 
         <footer class="footer-standard-dark bg-extra-dark-gray"> 
             <div class="footer-widget-area padding-three-tb sm-padding-40px-tb">
                 <div class="container">
@@ -138,7 +140,7 @@
                                 @endforeach
                             <!-- end logo -->
                             @foreach ($sections as $section)
-                                @if ($section->slug === 'about')
+                                @if ($section->slug === 'footer')
                                     <p class=" d-inline-block w-95 lg-w-100 xs-w-95">{!! $section->description !!}</p>
                                 @endif
                             @endforeach
@@ -201,6 +203,8 @@
                 </div>
             </div>
         </footer>
+        @endif
+        @endforeach
         <!-- end footer -->
         <!-- start scroll to top -->
         <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
