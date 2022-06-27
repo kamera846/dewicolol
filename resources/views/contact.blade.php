@@ -74,17 +74,14 @@
                 <h5 class=" text-white-2 alt-font font-weight-700 text-uppercase margin-5px-bottom sm-margin-three-bottom">{{ $section->title }}</h5>
                 <div class="text-medium-gray alt-font text-small sm-margin-ten-bottom margin-55px-bottom">{!! $section->description !!}</div>
                 {{-- Jangan ragu untuk menghubungi kami jika anda punya pertanyaan, dukungan, atau saran agaar kami lebih baik! --}}
-                <form id="project-contact-form-4" method="post" target="_blank" autocomplete="off">
-                    {{ csrf_field() }}
+                <form method="post" target="_blank" autocomplete="off">
+                    @csrf
                     <div class="row">
-                        <div class="col-12">
-                            <div class="form-results d-none"></div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" name="nama" placeholder="Nama lengkap *" class="bg-transparent border-color-medium-dark-gray medium-input" required>
                         </div>
                         <div class="col-12 col-md-6">
-                            <input type="text" name="nama" id="nama" placeholder="Nama lengkap *" class="bg-transparent border-color-medium-dark-gray medium-input required" required>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <input type="email" name="email" id="email" placeholder="Alamat E-mail *" class="bg-transparent border-color-medium-dark-gray medium-input required" required>
+                            <input type="email" name="email" placeholder="Alamat E-mail *" class="bg-transparent border-color-medium-dark-gray medium-input" required>
                         </div>
 
                         {{-- nomor --}}
@@ -93,10 +90,10 @@
                         @endforeach
 
                         <div class="col-12">
-                            <textarea name="pesan" id="pesan" placeholder="Isi pesan anda" rows="7" class="bg-transparent border-color-medium-dark-gray medium-textarea" required></textarea>
+                            <textarea name="pesan" placeholder="Isi pesan anda" rows="7" class="bg-transparent border-color-medium-dark-gray medium-textarea" required></textarea>
                         </div>
                         <div class="col-12 text-center">
-                            <button id="project-contact-us-4-button" type="submit" class="btn btn-deep-pink btn-medium margin-15px-top submit">Kirim Pesan</button>
+                            <button type="submit" class="btn btn-deep-pink btn-medium margin-15px-top">Kirim Pesan</button>
                         </div>
                     </div>
                 </form>
